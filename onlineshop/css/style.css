@@ -1,0 +1,323 @@
+*, *::before, *::after{ box-sizing: border-box; }
+/* common
+---------------------- */
+body{
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9vw;
+    letter-spacing: 4.5px;
+    color: #505253;
+}
+p{
+    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 1.2px;
+    color: #505253;
+}
+a{
+    text-decoration: none;
+    color: #BEB9B3;
+}
+i{
+    color: #BEB9B3;
+}
+.main-area{
+    width: 100vw;
+    height: 100vh;
+    padding: 4.819% 1.875% 0 1.875%;
+    background-color: #ffffff;
+    position: relative;
+}
+.main-block{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.deco-left{
+    width: 48.157%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 20% 100%);
+    background-color: #3A462E;
+    z-index: 1;
+}
+.deco-right{
+    width: 48.157%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0%, 100% 0, 80% 100%, 0% 100%);
+    background-color: #3A462E;
+    z-index: 2;
+}
+
+
+/* common fixed
+---------------------- */
+h1{
+    width: 5.052%;
+    margin: 6.858% 0 0 2.916%;
+    position: fixed;
+    z-index: 30;
+}
+h1 img{
+    width: 100%;
+}
+.scroll-area{
+    width: 5.219%;
+    height: 31.788%;
+    position: absolute;
+    top: 37.071%;
+    left: 2.708%;
+    z-index: 29;
+}
+.scroll-area figure{
+    height: 37.026%;
+    position: absolute;
+    top: 62.973%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.scroll-area img{
+    height: 100%;
+}
+.scroll-bar{
+    width: 2px;
+    height: 57.725%;
+    background-color: #BEB9B3;
+    position: absolute;
+    top: 0;
+    left: 7%;
+}
+.menu{
+    width: 30px;
+    position: absolute;
+    left: 2.708%;
+    bottom: 2.78%;
+    z-index: 29;
+}
+.menu img{
+    width: 100%;
+}
+
+/* common title
+---------------------- */
+.title-area{
+    width: 25%;
+    height: 46%;
+    position: absolute;
+    top: 0;
+    left: 5.937%;
+    z-index: 23;
+    opacity: 1;
+}
+.title-area .title-line{
+    width: 1px;
+    height: 54.186%;
+    background-color: #505253;
+    margin: 0 auto 0 auto;
+}
+.title-area figure{
+    width: 63.484%;
+    margin: 8% 18.181% 0 auto;
+}
+.title-area figure img{
+    width: 100%;
+}
+.title-text{
+    position: absolute;
+    top: 30.354%;
+    left: 13.854%;
+    z-index: 25;
+}
+.main-area h2{
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    letter-spacing: 3px;
+    color: #505253;
+    margin-bottom: 10px;
+}
+
+/* header nav
+---------------------- */
+nav{
+    width: 18.958%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 4.819% 0 4.819% 1.875%;
+    position: relative;
+    margin-left: -364px;
+    position: fixed;
+    z-index: 30;
+    /* background-color: salmon; */
+}
+
+.nav-list{
+    line-height: 15px;
+    position: absolute;
+    top: 36.178%;
+    left: 28.615%;
+}
+.nav-list span{
+    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    letter-spacing: 1.2px;
+    color: #505253;
+}
+.nav-list li{
+    margin-bottom: 30px;
+}
+.share-area{
+    width: 90.259%;
+    position: absolute;
+    bottom: 8.526%;
+    left: 9.89%;
+}
+.bottom-block{
+    width: 90.259%;
+    margin-right: 96px;
+}
+.bottom-block h3{
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6vw;
+    letter-spacing: 3.45px;
+    color: #BEB9B3;
+    margin-bottom: 15px;
+}
+.share-line{
+    width: 12.820%;
+    height: 2px;
+    background-color: #BEB9B3;
+    margin-bottom: 15px;
+}
+.share-area figure{
+    width: 16.987%;
+    position: absolute;
+    top: 10%;
+    right: 10.256%;
+}
+.share-area figure img{
+    width: 100%;
+}
+nav p{
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: #BEB9B3;
+    position: absolute;
+    bottom: 3.358%;
+    left: 9.89%;
+}
+.right-buttom-area{
+    width: 30.546%;
+    height: 13.535%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    position: fixed;
+    z-index: 29;
+    margin-right: 1.875%;
+}
+.right-buttom-area .button-news{
+    width: 100%;
+    height: 29%;
+    background-color: rgba(190, 185, 179, 1);
+}
+.right-buttom-area .button-news p{
+    font-size: 1vw;
+    width: 100%;
+    height: 29%;
+    background-color: rgba(190, 185, 179, 1);
+    padding: 10px 0 0 8px;
+}
+.right-buttom-area .button-shop{
+    width: 100%;
+    height: 71%;
+    background-color:rgba(161, 144, 71, 1);
+}
+.right-buttom-area .button-shop p{
+    width: 100%;
+    height: 71%;
+    background-color:rgba(161, 144, 71, 1);
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    letter-spacing: 4.5px;
+    color: #EBEBEB;
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+
+/* select-area
+---------------------- */
+.select-area{
+    width: 100vw;
+    height: 100vh;
+    padding: 4.819% 1.875% 0 18.958%;
+    background-color: #ffffff;
+    position: relative;
+}
+.preview{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+
+/* レスポンシブ
+---------------------- */
+@media(max-width: 750px){
+
+}
+@media(min-width:1200px){
+    body{
+        font-size: 23px;
+    }
+    .more-area h3{
+        font-size: 18px;
+    }
+    .text-area h3{
+        font-size: 25px;
+    }
+    .text-area p{
+        font-size: 15px;
+    }
+    .nav-list span{
+        font-size: 12px;
+    }
+    .share p{
+        font-size: 20px;
+    }
+    nav p{
+        font-size: 12px;
+    }
+    .right-buttom-area .button-news p{
+        font-size: 15px;
+    }
+    .right-buttom-area .button-shop p{
+        font-size: 28px;
+    }
+    /* .title-area figure{
+        width: 130px;
+    } */
+}
