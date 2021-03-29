@@ -109,6 +109,14 @@ i{
     top: 79.259%;
     left: 28.184%;
     position: relative;
+    /* アニメーション */
+    /* opacity: 0;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
 }
 .more-circle{
     width: 70px;
@@ -163,6 +171,59 @@ i{
     margin: 0 0 0 30%;
 }
 
+/* animation
+---------------------- */
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes top-in{
+    0%{
+        top: -46%;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes left-in{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 28.184%;
+    }
+}
+.top-in{
+    /* アニメーション */
+    animation-name: top-in;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.left-in{
+    /* アニメーション */
+    animation-name: left-in;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.fade-in{
+    /* アニメーション */
+    /* animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+}
 
 /* header nav
 ---------------------- */
