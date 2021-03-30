@@ -125,7 +125,20 @@ i{
     animation-iteration-count: 1;
     animation-fill-mode: forwards; */
 }
-.more-circle{
+svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: rotate(0deg); */
+}
+
+circle{
+    fill: transparent;
+    stroke: #505253;
+    stroke-width: 1;
+    animation: circle 2s infinite;
+}
+/* .more-circle{
     width: 70px;
     height: 70px;
     position: absolute;
@@ -133,7 +146,7 @@ i{
     left: 0;
     border-radius: 50%;
     border: solid 1px #505253;
-}
+} */
 .more-line{
     width: 87%;
     height: 1px;
@@ -147,6 +160,7 @@ i{
     position: absolute;
     top: 30%;
     left: 46.534%;
+    color: #505253;
 }
 
 /* common title
@@ -183,6 +197,24 @@ i{
 
 /* animation
 ---------------------- */
+@keyframes line {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      60% {
+        -webkit-transform: translate3d(0, 117px, 0);
+        transform: translate3d(0, 117px, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(0, 117px, 0);
+        transform: translate3d(0, 117px, 0);
+      }
+}
+@keyframes circle {
+    0% { stroke-dasharray: 0 377; }
+    99.9%,to { stroke-dasharray: 377 377; }
+  }
 @keyframes fade{
     0%{
         opacity: 0;
@@ -207,6 +239,30 @@ i{
         left: 28.184%;
     }
 }
+@keyframes left-in-text{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 5.789%;
+    }
+}
+@keyframes left-in-box{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes right-in-img{
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 0;
+    }
+}
 .top-in{
     /* アニメーション */
     animation-name: top-in;
@@ -219,6 +275,33 @@ i{
 .left-in-more{
     /* アニメーション */
     animation-name: left-in-more;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.left-in-text{
+    /* アニメーション */
+    animation-name: left-in-text;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.left-in-box{
+    /* アニメーション */
+    animation-name: left-in-box;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.right-in-img{
+    /* アニメーション */
+    animation-name: right-in-img;
     animation-duration: 0.6s;
     animation-delay: 0;
     animation-timing-function: ease-in-out;
@@ -277,7 +360,21 @@ h1 img{
     position: absolute;
     top: 0;
     left: 45%;
+    overflow: hidden;
 }
+.scroll-bar::before {
+    content: '';
+    width: 2px;
+    height: 117px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: 0 auto 0 auto;
+    background-color: #ffffff;
+    -webkit-animation: line 2s ease 0s infinite normal;
+    animation: line 2s ease 0s infinite normal;
+  }
 .nav-list{
     line-height: 15px;
     position: absolute;
@@ -292,9 +389,9 @@ h1 img{
     letter-spacing: 1.2px;
     color: #505253;
 }
-/* .nav-list li{
-    margin-bottom: 28%;
-} */
+.nav-list li{
+    margin-bottom: 5%;
+}
 .menu_line{
     width: 15.62%;
     height: 2px;
