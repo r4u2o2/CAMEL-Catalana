@@ -74,11 +74,25 @@ h1 img{
 .scroll-bar{
     width: 2px;
     height: 57.725%;
-    background-color: #BEB9B3;
+    background-color: #ffffff;
     position: absolute;
     top: 0;
     left: 7%;
+    overflow: hidden;
 }
+.scroll-bar::before {
+    content: '';
+    width: 2px;
+    height: 117px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: 0 auto 0 auto;
+    background-color: #BEB9B3;
+    -webkit-animation: line 2s ease 0s infinite normal;
+    animation: line 2s ease 0s infinite normal;
+  }
 .menu{
     width: 30px;
     position: absolute;
@@ -135,6 +149,58 @@ h1 img{
     letter-spacing: 3px;
     color: #505253;
     margin-bottom: 10px;
+}
+
+
+/* animation
+---------------------- */
+@keyframes line {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      60% {
+        -webkit-transform: translate3d(0, 117px, 0);
+        transform: translate3d(0, 117px, 0);
+      }
+      100% {
+        -webkit-transform: translate3d(0, 117px, 0);
+        transform: translate3d(0, 117px, 0);
+      }
+}
+@keyframes top-in{
+    0%{
+        top: -46%;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes top-in-text{
+    0%{
+        top: -5%;
+    }
+    100%{
+        top: 27.354%;
+    }
+}
+.top-in{
+    /* アニメーション */
+    animation-name: top-in;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.top-in-text{
+    /* アニメーション */
+    animation-name: top-in-text;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 /* header nav
