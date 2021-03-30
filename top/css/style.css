@@ -30,6 +30,13 @@ i{
     padding: 3.336% 1.875% 0 18.958%;
     background-color: #ffffff;
     position: relative;
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 .main-block{
     width: 100%;
@@ -192,7 +199,7 @@ i{
         top: 0;
     }
 }
-@keyframes left-in{
+@keyframes left-in-more{
     0%{
         left: 0;
     }
@@ -205,27 +212,27 @@ i{
     animation-name: top-in;
     animation-duration: 0.6s;
     animation-delay: 0;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.left-in{
+.left-in-more{
     /* アニメーション */
-    animation-name: left-in;
+    animation-name: left-in-more;
     animation-duration: 0.6s;
     animation-delay: 0;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 .fade-in{
     /* アニメーション */
-    /* animation-name: fade;
+    animation-name: fade;
     animation-duration: 1s;
     animation-delay: 0;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
 /* header nav
@@ -238,7 +245,6 @@ nav{
     position: relative;
     position: fixed;
     z-index: 30;
-    /* background-color: salmon; */
 }
 h1{
     width: 52.597%;
@@ -286,8 +292,15 @@ h1 img{
     letter-spacing: 1.2px;
     color: #505253;
 }
-.nav-list li{
+/* .nav-list li{
     margin-bottom: 28%;
+} */
+.menu_line{
+    width: 15.62%;
+    height: 2px;
+    background-color: #505253;
+    margin-bottom: 28%;
+    opacity: 0;
 }
 .share-area{
     width: 90.259%;
@@ -537,7 +550,7 @@ video{
         font-size: 18px;
     }
     .text-area h3{
-        font-size: 25px;
+        font-size: 23px;
     }
     .text-area p{
         font-size: 15px;
