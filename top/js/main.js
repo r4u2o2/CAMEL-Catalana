@@ -91,7 +91,7 @@ $(function(){
     if(workPosY02 - $(window).height() < dy)
     {
         $('#productArea > #titleArea02').addClass('top-in'),
-        $('#productBlock > #moreArea02').addClass('left-in-more'),
+        $('#moreArea02').addClass('left-in-more'),
         $('#productBlock > #textArea02').addClass('left-in-text'),
         $('#rightIn02').addClass('right-in-img'),
         $('#manuLine02').css('opacity','1');
@@ -99,7 +99,7 @@ $(function(){
     else
     {
         $('#productArea > #titleArea02').removeClass('top-in'),
-        $('#productBlock > #moreArea02').removeClass('left-in-more'),
+        $('#moreArea02').removeClass('left-in-more'),
         $('#productBlock > #textArea02').removeClass('left-in-text'),
         $('#rightIn02').removeClass('right-in-img'),
         $('#manuLine02').css('opacity','0');
@@ -107,7 +107,7 @@ $(function(){
     if(workPosY03 - $(window).height() < dy)
     {
         $('#productArea > #titleArea02').removeClass('top-in'),
-        $('#productBlock > #moreArea02').removeClass('left-in-more'),
+        $('#moreArea02').removeClass('left-in-more'),
         $('#productBlock > #textArea02').removeClass('left-in-text'),
         $('#rightIn02').removeClass('right-in-img'),
         $('#manuLine02').css('opacity','0');
@@ -131,7 +131,7 @@ $(function(){
     if(workPosY03 - $(window).height() < dy)
     {
         $('#deliveryArea > #titleArea03').addClass('top-in'),
-        $('#deliveryBlock > #moreArea03').addClass('left-in-more'),
+        $('#moreArea03').addClass('left-in-more'),
         $('#deliveryBlock > #textArea03').addClass('left-in-text'),
         $('#rightIn03').addClass('right-in-img'),
         $('#manuLine03').css('opacity','1');
@@ -139,7 +139,7 @@ $(function(){
     else
     {
         $('#deliveryArea > #titleArea03').removeClass('top-in'),
-        $('#deliveryBlock > #moreArea03').removeClass('left-in-more'),
+        $('#moreArea03').removeClass('left-in-more'),
         $('#deliveryBlock > #textArea03').removeClass('left-in-text'),
         $('#rightIn03').removeClass('right-in-img'),
         $('#manuLine03').css('opacity','0');
@@ -147,7 +147,7 @@ $(function(){
     if(workPosY04 - $(window).height() < dy)
     {
         $('#deliveryArea > #titleArea03').removeClass('top-in'),
-        $('#deliveryBlock > #moreArea03').removeClass('left-in-more'),
+        $('#moreArea03').removeClass('left-in-more'),
         $('#deliveryBlock > #textArea03').removeClass('left-in-text'),
         $('#rightIn03').removeClass('right-in-img'),
         $('#manuLine03').css('opacity','0');
@@ -169,7 +169,7 @@ $(function(){
      if(workPosY04 - $(window).height() < dy)
      {
          $('#articleArea > #titleArea04').addClass('top-in'),
-         $('#articleBlock > #moreArea04').addClass('left-in-more'),
+         $('#moreArea04').addClass('left-in-more'),
          $('#articleBox').addClass('left-in-box'),
          $('#rightIn04').addClass('right-in-img'),
          $('#manuLine04').css('opacity','1');
@@ -177,7 +177,7 @@ $(function(){
      else
      {
          $('#articleArea > #titleArea04').removeClass('top-in'),
-         $('#articleBlock > #moreArea04').removeClass('left-in-more'),
+         $('#moreArea04').removeClass('left-in-more'),
          $('#articleBox').removeClass('left-in-box'),
          $('#rightIn04').removeClass('right-in-img'),
          $('#manuLine04').css('opacity','0');
@@ -213,10 +213,6 @@ $(function(){
     ]
 
 
-//     $(window).on("scroll", function() {
-//         var index = $(this).index();
-//         console.log(index + '回スクロールしたよ');
-// });
 
     $('#navList > li').on('click', function(){
         

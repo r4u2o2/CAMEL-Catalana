@@ -51,48 +51,6 @@ h1{
 h1 img{
     width: 100%;
 }
-.scroll-area{
-    width: 5.219%;
-    height: 31.788%;
-    position: absolute;
-    top: 37.071%;
-    left: 2.708%;
-    z-index: 29;
-    position: fixed;
-}
-.scroll-area figure{
-    height: 37.026%;
-    position: absolute;
-    top: 62.973%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.scroll-area img{
-    height: 100%;
-}
-.scroll-bar{
-    width: 2px;
-    height: 57.725%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 0;
-    left: 7%;
-    overflow: hidden;
-}
-.scroll-bar::before {
-    content: '';
-    width: 2px;
-    height: 117px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    margin: 0 auto 0 auto;
-    background-color: #BEB9B3;
-    -webkit-animation: line 2s ease 0s infinite normal;
-    animation: line 2s ease 0s infinite normal;
-  }
 .menu{
     width: 30px;
     position: absolute;
@@ -292,47 +250,6 @@ nav p{
     position: absolute;
     bottom: 3.358%;
     left: 9.89%;
-}
-.right-buttom-area{
-    width: 28.546%;
-    height: 15.535%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: block;
-    position: fixed;
-    z-index: 29;
-    margin-right: 1.875%;
-}
-.right-buttom-area .button-news{
-    width: 100%;
-    height: 29%;
-    background-color: rgba(190, 185, 179, 1);
-}
-.right-buttom-area .button-news p{
-    font-size: 0.8vw;
-    width: 100%;
-    height: 29%;
-    background-color: rgba(190, 185, 179, 1);
-    padding: 10px 0 0 8px;
-}
-.right-buttom-area .button-shop{
-    width: 100%;
-    height: 71%;
-    background-color:rgba(161, 144, 71, 1);
-}
-.right-buttom-area .button-shop p{
-    width: 100%;
-    height: 71%;
-    background-color:rgba(161, 144, 71, 1);
-    font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2vw;
-    letter-spacing: 4.5px;
-    color: #EBEBEB;
-    text-align: center;
-    padding: 23px 0 0 0;
 }
 
 /* main-block

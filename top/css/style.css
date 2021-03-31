@@ -27,7 +27,7 @@ i{
 .main-area{
     width: 100vw;
     height: 100vh;
-    padding: 3.336% 1.875% 0 18.958%;
+    padding: 10.336% 0 0 0;
     background-color: #ffffff;
     position: relative;
     /* アニメーション */
@@ -49,7 +49,7 @@ i{
     height: 36.184%;
     position: absolute;
     top: 42.453%;
-    left: 5.789%;
+    left: 15.789%;
 }
 .text-area h3{
     font-family: sofia-pro, sans-serif;
@@ -70,38 +70,38 @@ i{
 }
 .img-right{
     width: 48.157%;
-    height: 100%;
+    height: 117%;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
     z-index: 27;
 }
 .deco-left{
     width: 48.157%;
-    height: 100%;
+    height: 117%;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 20% 100%);
     background-color: #3A462E;
     z-index: 1;
 }
 .img-left{
     width: 48.157%;
-    height: 100%;
+    height: 117%;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 20% 100%);
     z-index: 26;
 }
 .deco-right{
     width: 48.157%;
-    height: 100%;
+    height: 117%;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
     background-color: #3A462E;
     z-index: 2;
@@ -110,11 +110,11 @@ i{
 /* common more
 ---------------------- */
 .more-area{
-    width: 26.578%;
+    width: 20.578%;
     height: 9.737%;
     position: absolute;
     top: 79.259%;
-    left: 28.184%;
+    left: 33.184%;
     position: relative;
     /* アニメーション */
     /* opacity: 0;
@@ -129,24 +129,13 @@ svg{
     position: absolute;
     bottom: 0;
     left: 0;
-    /* transform: rotate(0deg); */
 }
-
 circle{
     fill: transparent;
     stroke: #505253;
     stroke-width: 1;
     animation: circle 2s infinite;
 }
-/* .more-circle{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 50%;
-    border: solid 1px #505253;
-} */
 .more-line{
     width: 87%;
     height: 1px;
@@ -162,27 +151,91 @@ circle{
     left: 46.534%;
     color: #505253;
 }
-
+/* common fixed
+---------------------- */
+h1{
+    width: 5.052%;
+    margin: 4.819% 0 0 2.916%;
+    position: fixed;
+    z-index: 35;
+}
+h1 a img{
+    width: 100%;
+}
+.scroll-area{
+    width: 5.219%;
+    height: 31.788%;
+    position: absolute;
+    top: 60.071%;
+    left: 2.708%;
+    z-index: 29;
+    position: fixed;
+}
+.scroll-area figure{
+    height: 37.026%;
+    position: absolute;
+    top: 62.973%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.scroll-area img{
+    height: 100%;
+}
+.scroll-bar{
+    width: 2px;
+    height: 57.725%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    overflow: hidden;
+}
+.scroll-bar::before {
+    content: '';
+    width: 2px;
+    height: 117px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: 0 auto 0 auto;
+    background-color: #BEB9B3;
+    -webkit-animation: line 2s ease 0s infinite normal;
+    animation: line 2s ease 0s infinite normal;
+  }
+.menu{
+    width: 30px;
+    position: absolute;
+    left: 2.708%;
+    bottom: 2.78%;
+    z-index: 29;
+    position: fixed;
+    z-index: 30;
+}
+.menu img{
+    width: 100%;
+}
 /* common title
 ---------------------- */
 .title-area{
-    width: 18%;
-    height: 46%;
+    width: 14%;
+    height: 43%;
     position: absolute;
-    top: 0;
-    left: 19.791%;
+    top: 8%;
+    left: 11.562%;
     z-index: 23;
     opacity: 1;
 }
 .title-area .title-line{
     width: 1px;
-    height: 54.186%;
+    height: 58.186%;
     background-color: #505253;
     margin: 0 auto 0 auto;
 }
 .title-area figure{
     width: 63.484%;
-    margin: -20% 18.181% 0 auto;
+    margin: -20% 0 0 18.181%;
 }
 .title-area figure img{
     width: 100%;
@@ -228,7 +281,7 @@ circle{
         top: -46%;
     }
     100%{
-        top: 0;
+        top: 8%;
     }
 }
 @keyframes left-in-more{
@@ -236,7 +289,7 @@ circle{
         left: 0;
     }
     100%{
-        left: 28.184%;
+        left: 33.184%;
     }
 }
 @keyframes left-in-text{
@@ -244,7 +297,7 @@ circle{
         left: 0%;
     }
     100%{
-        left: 5.789%;
+        left: 15.789%;
     }
 }
 @keyframes left-in-box{
@@ -261,6 +314,14 @@ circle{
     }
     100%{
         right: 0;
+    }
+}
+@keyframes menu-in{
+    0%{
+        margin-left: -364px;
+    }
+    100%{
+        margin-left: 0px;
     }
 }
 .top-in{
@@ -317,7 +378,44 @@ circle{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.menu-in{
+    animation-name: menu-in;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
+/* header
+---------------------- */
+header{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/about.jpg) no-repeat center center;
+    background-size: cover;
+}
+header .title-area{
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 11.562%;
+    z-index: 28;
+}
+header .title-area h2{
+    line-height: 16px;
+    letter-spacing: 3px;
+    margin: 7% 0 4% 32%;
+}
+header .title-area span{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    margin: 7% 0 7% 12%;
+}
+header .title-area p{
+    font-size: 12px;
+    margin: 0 0 0 29%;
+}
 /* header nav
 ---------------------- */
 nav{
@@ -326,56 +424,10 @@ nav{
     background-color: #ffffff;
     padding: 3.336% 0 4.819% 1.875%;
     position: relative;
-    margin-left: 0px;
+    margin-left: -364px;
     position: fixed;
-    z-index: 30;
+    z-index: 25;
 }
-h1{
-    width: 52.597%;
-}
-h1 img{
-    width: 100%;
-}
-.scroll-area{
-    width: 5.219%;
-    height: 31.788%;
-    position: absolute;
-    top: 37.071%;
-    left: 9.89%;
-}
-.scroll-area figure{
-    height: 37.026%;
-    position: absolute;
-    top: 62.973%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.scroll-area img{
-    height: 100%;
-}
-.scroll-bar{
-    width: 2px;
-    height: 57.725%;
-    background-color: #BEB9B3;
-    position: absolute;
-    top: 0;
-    left: 45%;
-    overflow: hidden;
-}
-.scroll-bar::before {
-    content: '';
-    width: 2px;
-    height: 117px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    margin: 0 auto 0 auto;
-    background-color: #ffffff;
-    -webkit-animation: line 2s ease 0s infinite normal;
-    animation: line 2s ease 0s infinite normal;
-  }
 .nav-list{
     line-height: 15px;
     position: absolute;
@@ -454,18 +506,7 @@ nav p{
     position: fixed;
     z-index: 29;
     margin-right: 1.875%;
-}
-.right-buttom-area .button-news{
-    width: 100%;
-    height: 29%;
-    background-color: rgba(190, 185, 179, 1);
-}
-.right-buttom-area .button-news p{
-    font-size: 0.8vw;
-    width: 100%;
-    height: 29%;
-    background-color: rgba(190, 185, 179, 1);
-    padding: 10px 0 0 8px;
+    display: none;
 }
 .right-buttom-area .button-shop{
     width: 100%;
@@ -492,19 +533,8 @@ nav p{
 main{
     position: relative;
 }
-.top .title-area{
-    background-color: #ffffff;
-    z-index: 28;
-}
-.top .title-area h2{
-    line-height: 13px;
-    margin-top: 4.09%;
-    margin-bottom: 4.09%;
-}
-.top .title-area span{
-    font-size: 1vw;
-}
-.top .img01{
+
+/* .top .img01{
     width: 65.184%;
     height: 100%;
     z-index: 17;
@@ -514,19 +544,25 @@ main{
     clip-path: polygon(0% 0%, 100% 0, 90% 100%, 0% 100%);
     background: url(../img/top.jpg) no-repeat center center;
     background-size: cover;
-    /* z-index: 17; */
-}
+} */
 
 
 /* top
 ---------------------- */
+.top{
+    width: 100vw;
+    height: 70vh;
+    padding: 10.336% 0 0 0;
+}
 video{
-    /* width: 60%; */
     height: 100%;
     z-index: 2;
     position: absolute;
     top: 0;
     right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
 }
 
 
@@ -562,35 +598,37 @@ video{
 ---------------------- */
 .article .img-left{
     width: 48.157%;
-    height: 100%;
+    height: 117%;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
     background-color: rgba(116, 112, 108, 0.7);
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 20% 100%);
     z-index: 3;
 }
 .article .more-area{
-    width: 26.578%;
+    width: 20.578%;
     height: 9.737%;
     position: absolute;
     top: 86.27%;
-    left: 28.184%;
+    left: 33.184%;
     position: relative;
 }
 .article-block{
-    width: 100%;
+    width: 56%;
     height: 52.527%;
     position: absolute;
     top: 30.432%;
     left: 0;
-    padding: 0 1.71% 0 1.71%;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
     z-index: 24;
     display: flex;
     justify-content: space-between;
 }
 .article-box{
-    width: 30.789%;
+    width: 31.789%;
     height: 100%;
     background-color: #E2DFDC;
     border-radius: 10px;
@@ -598,7 +636,7 @@ video{
 }
 .article-box>div{
     width: 100%;
-    height: 60.714%;
+    height: 58.714%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-bottom: 16px;
@@ -619,7 +657,7 @@ video{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     letter-spacing: 1.2px;
     color: #505253;
     margin: 0 4.7% 16px 4.7%;
@@ -628,7 +666,7 @@ video{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     letter-spacing: 1.2px;
     color: #505253;
     margin: 0 4.7% 0 4.7%;
@@ -652,9 +690,6 @@ video{
     }
     .text-area p{
         font-size: 15px;
-    }
-    h1{
-        width: 103px;
     }
     .nav-list span{
         font-size: 12px;
