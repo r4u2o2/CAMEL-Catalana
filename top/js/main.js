@@ -1,4 +1,6 @@
 $(function(){
+
+
     /**
      * topArea
      */
@@ -8,7 +10,7 @@ $(function(){
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
@@ -40,7 +42,7 @@ $(function(){
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
@@ -82,7 +84,7 @@ $(function(){
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
@@ -122,7 +124,7 @@ $(function(){
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
@@ -160,7 +162,7 @@ $(function(){
      // 2. スクロール位置取得
      $(window).on('scroll', function(){
          var dy = $(this).scrollTop();
-         console.log('dy' + dy);
+        //  console.log('dy' + dy);
      // 3. 条件文
      // console.log($(window).height());
      // 4. 対象要素にクラスの付与
@@ -181,5 +183,55 @@ $(function(){
          $('#manuLine04').css('opacity','0');
      }
      });
+
+     /**
+      * スクロール位置保存
+      */
+    $("#moreArea01, #moreArea02, #moreArea03, #moreArea04").click(function(){
+        var scrollPos = $(document).scrollTop();
+        localStorage.setItem('key',scrollPos);
+    });
+    $(document).ready(function(){
+        var pos = localStorage.getItem('key');
+        $('html,body').animate({ scrollTop: pos }, 'slow');
+        localStorage.clear();
+    });
+
+    /**
+     * ページ内リンク
+     */
+    // 目的のidの高さ取得
+    var linkPosY = [
+        $('#aboutArea').offset().top,
+        $('#aboutArea').offset().top,
+        $('#productArea').offset().top,
+        $('#productArea').offset().top,
+        $('#deliveryArea').offset().top,
+        $('#deliveryArea').offset().top,
+        $('#articleArea').offset().top,
+        $('#articleArea').offset().top,
+    ]
+
+
+//     $(window).on("scroll", function() {
+//         var index = $(this).index();
+//         console.log(index + '回スクロールしたよ');
+// });
+
+    $('#navList > li').on('click', function(){
+        
+        var index = $(this).index();
+        // console.log(index + '番目をクリックしたよ');
+
+        // console.log('高さ:' + linkPosY[index]);
+
+        // 目的のidまで移動
+        $('html').animate({
+            scrollTop: linkPosY[index]
+        }, 1000);
+
+        // リンクの解除
+        return false;
+    });
 
 });

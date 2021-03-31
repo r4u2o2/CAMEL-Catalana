@@ -34,37 +34,29 @@ $(function(){
     }
     });
 
+
     /**
-     * モーダル
+     * 画像切り替え（クリックイベント）
      */
-    //  1. 画像パスの配列準備
-    var imageSrcArray = [
-        'img/shop01.png',
-        'img/shop02.png',
-        'img/shop03.png',
-    ]
-    // // 2. #workBlock sectionクリック時
-    // $('#workBlock > section').on('click', function(){
-    //     // console.log('workblockクリックしたよ');
-    //     // 3. sectionの何番目を押したか判定
-    //     var index = $(this).index();
-    //     console.log('sectionの番号：' + index);
-    //     // 4. modalに入るHTML作成, 変数var modalContentに代入
-    //     // 5. #overlayの中のHTMLを書き換え、.fade-inを追加
+    var subImage1Src = $('#subImage1').css('background-image');
+    var subImage2Src = $('#subImage2').css('background-image');
+    var subImage3Src = $('#subImage3').css('background-image');
 
-    //     var modalContent = '<figure class="modal"><img src="' + imageSrcArray[index] + '" alt=""></figure>';
+    console.log('画像１：' + subImage1Src);
+    console.log('画像２：' + subImage2Src);
+    console.log('画像３：' + subImage3Src);
 
-    //     // $('#overlay').html('<figure class="modal"><img src="' + imageSrcArray[index] + '" alt=""></figure>');
+     $('#subImage1').on('click', function(){
+         console.log('画像1クリックしたよ');
+         $('#mainImage').css('background-image', subImage1Src);
+     });
+     $('#subImage2').on('click', function(){
+         console.log('画像2クリックしたよ');
+         $('#mainImage').css('background-image', subImage2Src);
+     });
+     $('#subImage3').on('click', function(){
+         console.log('画像3クリックしたよ');
+         $('#mainImage').css('background-image', subImage3Src);
+     });
 
-    //     $('#overlay').html(modalContent).addClass('fade-in');
-
-    //     // $('#overlay').html('<img src="' + imageSrcArray[index] + '"></img>'), $('#overlay').addClass('fade-in');
-        
-    //     // 6. #overlayを再度クリックした時、.fade-inを削除
-    //     $('#overlay').on('click', function(){
-    //         console.log('再度クリックしたよ');
-    //         $('#overlay').removeClass('fade-in');
-    //     });
-    // });
-    
 });
