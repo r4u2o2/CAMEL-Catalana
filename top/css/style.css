@@ -52,7 +52,7 @@ i{
     position: relative;
 }
 .text-area{
-    width: 44.078%;
+    width: 35.078%;
     height: 36.184%;
     position: absolute;
     top: 44.453%;
@@ -444,18 +444,22 @@ header .title-area p{
 nav{
     width: 18.958%;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    /* right: 0; */
+    right: -364px;
     background-color: #ffffff;
     padding: 3.336% 0 4.819% 1.875%;
     position: relative;
-    margin-left: -364px;
     position: fixed;
     z-index: 25;
 }
 .nav-list{
     line-height: 15px;
     position: absolute;
-    top: 36.178%;
-    left: 28.615%;
+    /* top: 25%; */
+    left: 9.89%;
+    bottom: 28%;
 }
 .nav-list span{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
@@ -581,7 +585,7 @@ main{
     display: flex;
     align-items: center;
 }
-.deco-right{
+.top .deco-right{
     width: 10.157%;
     height: 73%;
     position: absolute;
@@ -591,7 +595,7 @@ main{
     background-color: #3A462E;
     z-index: 2;
 }
-.deco-left{
+.top .deco-left{
     width: 10.157%;
     height: 73%;
     position: absolute;
