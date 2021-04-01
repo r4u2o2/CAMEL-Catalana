@@ -74,13 +74,14 @@ $(function(){
     let dayCount = 1 // 日にちのカウント
     let calendarHtml = '' // HTMLを組み立てる変数
 
-    calendarHtml += '<h3>' + year  + '/' + month + '</h3>'
+    calendarHtml += '<p>' + 'ご希望の到着予定日'
+    calendarHtml += '<h3>' + month + '月' + '</h3>'
     calendarHtml += '<table>'
 
     // 曜日の行を作成
-    for (let i = 0; i < weeks.length; i++) {
-        calendarHtml += '<td>' + weeks[i] + '</td>'
-    }
+    // for (let i = 0; i < weeks.length; i++) {
+    //     calendarHtml += '<td>' + weeks[i] + '</td>'
+    // }
 
     for (let w = 0; w < 6; w++) {
         calendarHtml += '<tr>'
