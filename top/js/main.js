@@ -1,12 +1,10 @@
 $(function(){
-
-
     /**
-     * topArea
+     * header
      */
     // 1. 要素の位置を取得
+    var workPosY0 = $('#headerArea').offset().top;
     var workPosY00 = $('#topArea').offset().top;
-    var workPosY01 = $('#aboutBlock > #textArea01').offset().top;
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
@@ -16,21 +14,15 @@ $(function(){
     // 4. 対象要素にクラスの付与
     if(workPosY00 - $(window).height() < dy)
     {
-        // $('#leftIn').addClass('left-in-box'),
-        // $('#rightIn00').addClass('right-in-img'),
-        $('#topArea > #titleArea00').addClass('top-in');
+        $('#scrollArea').css('opacity', '0');
     }
     else{
-        // $('#leftIn').removeClass('left-in-box'),
-        // $('#rightIn00').removeClass('right-in-img'),
-        $('#topArea > #titleArea00').removeClass('top-in');
+        $('#scrollArea').css('opacity', '1');
     }
-    if(workPosY01 - $(window).height() < dy)
-    {
-        // $('#leftIn').removeClass('left-in-box'),
-        // $('#rightIn00').removeClass('right-in-img'),
-        $('#topArea > #titleArea00').removeClass('top-in');
-    }
+    // if(workPosY00 - $(window).height() < dy)
+    // {
+    //     $('#headerArea > #titleArea00').removeClass('top-in');
+    // }
     });
     /**
      * anoutArea

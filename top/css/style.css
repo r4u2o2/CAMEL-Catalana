@@ -8,6 +8,13 @@ body{
     font-size: 1.9vw;
     letter-spacing: 4.5px;
     color: #505253;
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 p{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
@@ -26,8 +33,8 @@ i{
 }
 .main-area{
     width: 100vw;
-    height: 100vh;
-    padding: 10.336% 0 0 0;
+    height: 120vh;
+    padding: 24.336% 0 0 0;
     background-color: #ffffff;
     position: relative;
     /* アニメーション */
@@ -48,7 +55,7 @@ i{
     width: 44.078%;
     height: 36.184%;
     position: absolute;
-    top: 42.453%;
+    top: 44.453%;
     left: 15.789%;
 }
 .text-area h3{
@@ -70,7 +77,7 @@ i{
 }
 .img-right{
     width: 48.157%;
-    height: 117%;
+    height: 73%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -79,7 +86,7 @@ i{
 }
 .deco-left{
     width: 48.157%;
-    height: 117%;
+    height: 73%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -89,7 +96,7 @@ i{
 }
 .img-left{
     width: 48.157%;
-    height: 117%;
+    height: 73%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -98,7 +105,7 @@ i{
 }
 .deco-right{
     width: 48.157%;
-    height: 117%;
+    height: 73%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -114,7 +121,7 @@ i{
     height: 9.737%;
     position: absolute;
     top: 79.259%;
-    left: 33.184%;
+    left: -33.184%;
     position: relative;
     /* アニメーション */
     /* opacity: 0;
@@ -220,9 +227,9 @@ h1 a img{
 ---------------------- */
 .title-area{
     width: 14%;
-    height: 43%;
+    height: 40%;
     position: absolute;
-    top: 8%;
+    top: 24%;
     left: 11.562%;
     z-index: 23;
     opacity: 1;
@@ -235,7 +242,7 @@ h1 a img{
 }
 .title-area figure{
     width: 63.484%;
-    margin: -20% 0 0 18.181%;
+    margin: -18% 0 0 18.181%;
 }
 .title-area figure img{
     width: 100%;
@@ -276,12 +283,20 @@ h1 a img{
         opacity: 1;
     }
 }
-@keyframes top-in{
+@keyframes top-in-header{
     0%{
-        top: -46%;
+        top: -40%;
     }
     100%{
-        top: 8%;
+        top: 0;
+    }
+}
+@keyframes top-in{
+    0%{
+        top: -40%;
+    }
+    100%{
+        top: 24%;
     }
 }
 @keyframes left-in-more{
@@ -337,7 +352,7 @@ h1 a img{
     /* アニメーション */
     animation-name: left-in-more;
     animation-duration: 0.6s;
-    animation-delay: 0;
+    animation-delay: 0.6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -396,11 +411,19 @@ header{
     background-size: cover;
 }
 header .title-area{
+    height: 48%;
     background-color: #ffffff;
     position: absolute;
     top: 0;
     left: 11.562%;
     z-index: 28;
+    /* アニメーション */
+    animation-name: top-in-header;
+    animation-duration: 0.6s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 header .title-area h2{
     line-height: 16px;
@@ -552,16 +575,36 @@ main{
 .top{
     width: 100vw;
     height: 70vh;
-    padding: 10.336% 0 0 0;
+    padding: 20.336% 0 0 0;
 }
-video{
-    height: 100%;
-    z-index: 2;
+.top .main-block{
+    display: flex;
+    align-items: center;
+}
+.deco-right{
+    width: 10.157%;
+    height: 73%;
     position: absolute;
-    top: 0;
     right: 0;
+    bottom: 0;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 20% 100%);
+    background-color: #3A462E;
+    z-index: 2;
+}
+.deco-left{
+    width: 10.157%;
+    height: 73%;
+    position: absolute;
     left: 0;
     bottom: 0;
+    clip-path: polygon(0% 0%, 80% 0, 100% 100%, 0% 100%);
+    background-color: #3A462E;
+    z-index: 1;
+}
+video{
+    width: 60%;
+    /* height: 100%; */
+    z-index: 2;
     margin: 0 auto;
 }
 
@@ -598,7 +641,7 @@ video{
 ---------------------- */
 .article .img-left{
     width: 48.157%;
-    height: 117%;
+    height: 73%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -611,12 +654,13 @@ video{
     height: 9.737%;
     position: absolute;
     top: 86.27%;
-    left: 33.184%;
+    left: -33.184%;
+    /* left: 33.184%; */
     position: relative;
 }
 .article-block{
-    width: 56%;
-    height: 52.527%;
+    width: 52%;
+    height: 50.527%;
     position: absolute;
     top: 30.432%;
     left: 0;
