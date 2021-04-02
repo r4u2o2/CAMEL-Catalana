@@ -31,17 +31,20 @@ a{
 i{
     color: #BEB9B3;
 }
+main{
+    background-color: #f8f8f8;
+}
 .main-area{
     width: 100vw;
     height: 100vh;
     padding: 0;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     position: relative;
 }
 .main-block{
     width: 100%;
     height: 100%;
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     position: relative;
 }
 
@@ -175,14 +178,7 @@ h1 img{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/* .menu-in{
-    animation-name: menu-in;
-    animation-duration: 0.6s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-} */
+
 
 
 /* main-block
@@ -277,14 +273,14 @@ h1 img{
     width: 100vw;
     height: 100vh;
     /* padding: 0 1.875% 0 1.875%; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     position: relative;
 }
 .select-block{
     width: 100%;
     height: 100%;
-    background-color: #f8f8f8;
-    padding: 5.858% 7.922% 0 7.922%;
+    /* background-color: #f8f8f8; */
+    padding: 5.858% 9.922% 0 9.922%;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -320,6 +316,7 @@ h1 img{
     margin-bottom: 5.711%;
 }
 .preview p{
+    color: #707070;
     font-size: 1.2vw;
     margin-bottom: 3.092%;
 }
@@ -340,20 +337,21 @@ h1 img{
 }
 .select-box{
     width: 42.692%;
-    height: 139.573%;
+    /* height: 139.573%; */
     z-index: 25;
 }
 .select-box p{
     width: 100%;
     height: 6.469%;
-    font-size: 1vw;
+    font-size: 1.1vw;
+    color: #707070;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
     margin-bottom: 4.545%;
-    padding: 4.5% 0 0 6%;
+    padding: 4% 0 0 6%;
 }
-.select-box p:nth-of-type(5){
+.select-box p:nth-of-type(4){
     width: 65%;
     background-color: #A19047;
     color: #ffffff;
@@ -365,6 +363,7 @@ h1 img{
 
 /* カレンダー
 ---------------------- */
+
 .calender{
     background-color: #ffffff;
     padding: 6%;
@@ -373,7 +372,8 @@ h1 img{
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
 }
 .calender p{
-    font-size: 1vw;
+    font-size: 1.1vw;
+    color: #707070;
     border-radius: 0;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.30);
     margin-bottom: 10%;
@@ -381,33 +381,38 @@ h1 img{
 }
 .select-box div h3 {
     font-size: 18px;
+    color: #707070;
     margin-bottom: 4.545%;
     text-align: center;
 }
 
 .select-box div table {
     border-spacing: 0;
+    color: #707070;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
 .select-box div td {
     font-size: 18px;
+    color: #707070;
     border-width: 1px 0px;
     border-color: #ddd;
     border-style: solid;
     padding: 2% 2% 10% 2%;
     text-align: center;
 }
-
-/* .select-box div td:first-child {
-    background-color: #F5E2E8;
-    color: #F5E2E8;
+/* .select-box div td::first-line{
+    background-color: thistle;
+} */
+.select-box div td:first-child {
+    color: #D393A7;
 }
 
 .select-box div td:last-child {
-    color: #D9DEEF;
-} */
+    color: #A6B2DB;
+}
+
 
 /* レスポンシブ
 ---------------------- */
