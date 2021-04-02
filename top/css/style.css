@@ -120,17 +120,9 @@ i{
     width: 20.578%;
     height: 9.737%;
     position: absolute;
-    top: 79.259%;
+    top: 86.27%;
     left: -33.184%;
     position: relative;
-    /* アニメーション */
-    /* opacity: 0;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
 }
 svg{
     position: absolute;
@@ -439,13 +431,15 @@ header .title-area p{
     font-size: 12px;
     margin: 0 0 0 29%;
 }
+
+
 /* header nav
 ---------------------- */
 header .menu-button{
     display: block;
     position: fixed; /* 追加 *//* 変更 */
-    top: 16px;
-    right: 16px;
+    top: 4.819%;
+    right: 1.875%;
     z-index: 30; /* 追加 */
     width: 32px; /* 追加 */
     height: 24px; /* 追加 */
@@ -455,7 +449,7 @@ header .menu-button span{
     position: absolute;
     width: 32px;
     height: 2px;
-    background-color: #333333;
+    background-color: #ffffff;
     /* トランジション */
     transition-property: all;
     transition-duration: 0.2s;
@@ -491,14 +485,14 @@ header .menu-button.active span:nth-of-type(3){
 nav{
     width: 18.958%;
     height: 100vh;
+    background-color: #ffffff;
+    padding: 4.819% 0 4.819% 1.875%;
+    position: relative;
     position: absolute;
     top: 0;
     right: -364px;
-    background-color: #ffffff;
-    padding: 3.336% 0 4.819% 1.875%;
-    position: relative;
     position: fixed;
-    z-index: 25;
+    z-index: 29;
     /* アニメーション */
     animation: unset;
     /* display: none; */
@@ -516,10 +510,10 @@ header nav.active{
     position: fixed;
     pointer-events: auto; /* 追加 */
 }
+
 .nav-list{
     line-height: 15px;
     position: absolute;
-    /* top: 25%; */
     left: 9.89%;
     bottom: 28%;
 }
@@ -532,15 +526,8 @@ header nav.active{
     color: #505253;
 }
 .nav-list li{
-    margin-bottom: 5%;
+    margin-bottom: 30px;
     line-height: 20px;
-}
-.menu_line{
-    width: 15.62%;
-    height: 2px;
-    background-color: #505253;
-    margin-bottom: 28%;
-    opacity: 0;
 }
 .share-area{
     width: 90.259%;
@@ -567,15 +554,6 @@ header nav.active{
     background-color: #BEB9B3;
     margin-bottom: 15px;
 }
-/* .share-area figure{
-    width: 16.987%;
-    position: absolute;
-    top: 10%;
-    right: 10.256%;
-}
-.share-area figure img{
-    width: 100%;
-} */
 nav p{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
@@ -586,36 +564,6 @@ nav p{
     bottom: 3.358%;
     left: 9.89%;
 }
-.right-buttom-area{
-    width: 28.546%;
-    height: 15.535%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: block;
-    position: fixed;
-    z-index: 29;
-    margin-right: 1.875%;
-    display: none;
-}
-.right-buttom-area .button-shop{
-    width: 100%;
-    height: 71%;
-    background-color:rgba(161, 144, 71, 1);
-}
-.right-buttom-area .button-shop p{
-    width: 100%;
-    height: 71%;
-    background-color:rgba(161, 144, 71, 1);
-    font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2vw;
-    letter-spacing: 4.5px;
-    color: #EBEBEB;
-    text-align: center;
-    padding: 25px 0 0 0;
-}
 
 
 /* main01
@@ -624,17 +572,6 @@ main{
     position: relative;
 }
 
-/* .top .img01{
-    width: 65.184%;
-    height: 100%;
-    z-index: 17;
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip-path: polygon(0% 0%, 100% 0, 90% 100%, 0% 100%);
-    background: url(../img/top.jpg) no-repeat center center;
-    background-size: cover;
-} */
 
 
 /* top
@@ -697,11 +634,16 @@ video{
     background: url(../img/delivery.jpg) no-repeat center center;
     background-size: cover;
 }
+.delivery .more-area{
+    background-color: #A19047;
+    display: flex;
+    align-items: center;
+}
 .delivery .more-area h3{
-    width: 100%;
-    position: absolute;
-    top: 30%;
-    left: 30%;
+    color: #ffffff;
+    text-align: center;
+    position: unset;
+    margin: 0 auto;
 }
 
 /* article
