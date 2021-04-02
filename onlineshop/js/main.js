@@ -1,5 +1,13 @@
 $(function(){
     /**
+     * ハンバーガーメニュー
+     */
+     $('#manuButton').on('click', function(){
+        console.log('menuクリック');
+        $('#manuButton').toggleClass('active');
+        $('#nav').toggleClass('active');
+   });
+    /**
      * topArea
      */
     // 1. 要素の位置を取得

@@ -2,6 +2,14 @@ $(function(){
     /**
      * header
      */
+    /**
+     * ハンバーガーメニュー
+     */
+    $('#manuButton').on('click', function(){
+         console.log('menuクリック');
+         $('#manuButton').toggleClass('active');
+         $('#nav').toggleClass('active');
+    });
     // 1. 要素の位置を取得
     var workPosY0 = $('#headerArea').offset().top;
     var workPosY00 = $('#topArea').offset().top;
@@ -189,37 +197,37 @@ $(function(){
         localStorage.clear();
     });
 
-    /**
-     * ページ内リンク
-     */
-    // 目的のidの高さ取得
-    var linkPosY = [
-        $('#aboutArea').offset().top,
-        $('#aboutArea').offset().top,
-        $('#productArea').offset().top,
-        $('#productArea').offset().top,
-        $('#deliveryArea').offset().top,
-        $('#deliveryArea').offset().top,
-        $('#articleArea').offset().top,
-        $('#articleArea').offset().top,
-    ]
+    // /**
+    //  * ページ内リンク
+    //  */
+    // // 目的のidの高さ取得
+    // var linkPosY = [
+    //     $('#aboutArea').offset().top,
+    //     $('#aboutArea').offset().top,
+    //     $('#productArea').offset().top,
+    //     $('#productArea').offset().top,
+    //     $('#deliveryArea').offset().top,
+    //     $('#deliveryArea').offset().top,
+    //     $('#articleArea').offset().top,
+    //     $('#articleArea').offset().top,
+    // ]
 
 
 
-    $('#navList > li').on('click', function(){
+    // $('#navList > li').on('click', function(){
         
-        var index = $(this).index();
-        // console.log(index + '番目をクリックしたよ');
+    //     var index = $(this).index();
+    //     // console.log(index + '番目をクリックしたよ');
 
-        // console.log('高さ:' + linkPosY[index]);
+    //     // console.log('高さ:' + linkPosY[index]);
 
-        // 目的のidまで移動
-        $('html').animate({
-            scrollTop: linkPosY[index]
-        }, 1000);
+    //     // 目的のidまで移動
+    //     $('html').animate({
+    //         scrollTop: linkPosY[index]
+    //     }, 1000);
 
-        // リンクの解除
-        return false;
-    });
+    //     // リンクの解除
+    //     return false;
+    // });
 
 });

@@ -8,6 +8,13 @@ body{
     font-size: 1.9vw;
     letter-spacing: 4.5px;
     color: #505253;
+    /* アニメーション */
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 p{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
@@ -142,14 +149,14 @@ h1 img{
         top: 27.354%;
     }
 }
-/* @keyframes menu-in{
+@keyframes fade{
     0%{
-        margin-left: -364px;
+        opacity: 0;
     }
     100%{
-        margin-left: 0px;
+        opacity: 1;
     }
-} */
+}
 .top-in{
     /* アニメーション */
     animation-name: top-in;
@@ -179,22 +186,87 @@ h1 img{
 
 /* header nav
 ---------------------- */
+header .menu-button{
+    display: block;
+    position: fixed; /* 追加 *//* 変更 */
+    top: 16px;
+    right: 16px;
+    z-index: 30; /* 追加 */
+    width: 32px; /* 追加 */
+    height: 24px; /* 追加 */
+}
+/* 追加 */
+header .menu-button span{
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: #333333;
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(1){
+    top: 0;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(2){
+    top: 10px;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(3){
+    top: 20px;
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(1){
+    top: 0;
+    transform: translateY(12px) rotate(-45deg);
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(2){
+    opacity: 0;
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(3){
+    top: 0;
+    transform: translateY(12px) rotate(-135deg);
+}
 nav{
     width: 18.958%;
     height: 100vh;
     background-color: #ffffff;
     padding: 4.819% 0 4.819% 1.875%;
     position: relative;
-    margin-left: -364px;
+    position: absolute;
+    top: 0;
+    right: -364px;
     position: fixed;
-    z-index: 25;
+    z-index: 29;
+    /* アニメーション */
+    animation: unset;
+    /* display: none; */
+    pointer-events: none; /* 追加 */
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+header nav.active{
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed;
+    pointer-events: auto; /* 追加 */
 }
 
 .nav-list{
     line-height: 15px;
     position: absolute;
-    top: 36.178%;
-    left: 28.615%;
+    left: 9.89%;
+    bottom: 28%;
 }
 .nav-list span{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
@@ -206,6 +278,7 @@ nav{
 }
 .nav-list li{
     margin-bottom: 30px;
+    line-height: 20px;
 }
 .share-area{
     width: 90.259%;

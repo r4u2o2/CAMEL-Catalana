@@ -1,10 +1,18 @@
 $(function(){
     /**
+     * ハンバーガーメニュー
+     */
+     $('#manuButton').on('click', function(){
+        console.log('menuクリック');
+        $('#manuButton').toggleClass('active');
+        $('#nav').toggleClass('active');
+   });
+    /**
      * conceptArea
      */
     // 1. 要素の位置を取得
     var workPosY00 = $('#textArea01').offset().top;
-    var workPosY01 = $('#textArea02').offset().top;
+    var workPosY01 = $('#reasonArea').offset().top;
     console.log('text1:' + workPosY00);
     console.log('text2:' + workPosY01);
     // 2. スクロール位置取得
@@ -30,12 +38,13 @@ $(function(){
         $('#titleArea01').removeClass('top-in');
     }
     });
+    
     // /**
     //  * reasonArea
     //  */
     // 1. 要素の位置を取得
-    var workPosY01 = $('#textArea02').offset().top;
-    var workPosY02 = $('#textArea03').offset().top;
+    var workPosY01 = $('#reasonArea').offset().top;
+    var workPosY02 = $('#packageArea').offset().top;
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
@@ -69,7 +78,7 @@ $(function(){
     //  * packageArea
     //  */
     // 1. 要素の位置を取得
-    var workPosY02 = $('#textArea03').offset().top;
+    var workPosY02 = $('#packageArea').offset().top;
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();

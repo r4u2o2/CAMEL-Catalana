@@ -211,7 +211,7 @@ h1 a img{
     -webkit-animation: line 2s ease 0s infinite normal;
     animation: line 2s ease 0s infinite normal;
   }
-.menu{
+/* .back{
     width: 30px;
     position: absolute;
     left: 2.708%;
@@ -220,9 +220,9 @@ h1 a img{
     position: fixed;
     z-index: 30;
 }
-.menu img{
+.back img{
     width: 100%;
-}
+} */
 /* common title
 ---------------------- */
 .title-area{
@@ -441,18 +441,80 @@ header .title-area p{
 }
 /* header nav
 ---------------------- */
+header .menu-button{
+    display: block;
+    position: fixed; /* 追加 *//* 変更 */
+    top: 16px;
+    right: 16px;
+    z-index: 30; /* 追加 */
+    width: 32px; /* 追加 */
+    height: 24px; /* 追加 */
+}
+/* 追加 */
+header .menu-button span{
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: #333333;
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(1){
+    top: 0;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(2){
+    top: 10px;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(3){
+    top: 20px;
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(1){
+    top: 0;
+    transform: translateY(12px) rotate(-45deg);
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(2){
+    opacity: 0;
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(3){
+    top: 0;
+    transform: translateY(12px) rotate(-135deg);
+}
 nav{
     width: 18.958%;
     height: 100vh;
     position: absolute;
     top: 0;
-    /* right: 0; */
     right: -364px;
     background-color: #ffffff;
     padding: 3.336% 0 4.819% 1.875%;
     position: relative;
     position: fixed;
     z-index: 25;
+    /* アニメーション */
+    animation: unset;
+    /* display: none; */
+    pointer-events: none; /* 追加 */
+    /* トランジション */
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
+}
+header nav.active{
+    position: absolute;
+    top: 0;
+    right: 0;
+    position: fixed;
+    pointer-events: auto; /* 追加 */
 }
 .nav-list{
     line-height: 15px;
@@ -471,6 +533,7 @@ nav{
 }
 .nav-list li{
     margin-bottom: 5%;
+    line-height: 20px;
 }
 .menu_line{
     width: 15.62%;
