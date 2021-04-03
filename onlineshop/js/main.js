@@ -16,7 +16,7 @@ $(function(){
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
@@ -67,62 +67,34 @@ $(function(){
          $('#mainImage').css('background-image', subImage3Src);
      });
 
+    /**
+     * プルダウン
+     */
+    //アコーディオンをクリックした時の動作
+    $('.select').on('click', function() {//セレクト要素をクリックしたら
+        // console.log('セレクトクリック');
+
+        $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+      
+        var findElm = $(this).children(".box");//セレクト直後のアコーディオンを行うエリアを取得
+
+
+        if($('.box').hasClass('close')){//セレクト要素にクラス名closeがあれば
+            $(this).removeClass('close');//クラス名を除去    
+        }
+        else
+        {//それ以外は
+            $('.close').removeClass('close'); //クラス名closeを全て除去した後
+            $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+            $(findElm).slideDown(500);//アコーディオンを開く
+        }
+    });
+  
+
 
      /**
      * カレンダー
      */
-    // const weeks = ['日', '月', '火', '水', '木', '金', '土']
-    // const date = new Date()
-    // const year = date.getFullYear()
-    // const month = date.getMonth() + 1
-    // const startDate = new Date(year, month - 1, 1) // 月の最初の日を取得
-    // const endDate = new Date(year, month,  0) // 月の最後の日を取得
-    // const endDayCount = endDate.getDate() // 月の末日
-    // const startDay = startDate.getDay() // 月の最初の日の曜日を取得
-    // let dayCount = 1 // 日にちのカウント
-    // let calendarHtml = '' // HTMLを組み立てる変数
-
-    // calendarHtml += '<p>' + 'ご希望の到着予定日'
-    // calendarHtml += '<h3>' + month + '月' + '</h3>'
-    // calendarHtml += '<table>'
-
-    // // 曜日の行を作成
-    // // for (let i = 0; i < weeks.length; i++) {
-    // //     calendarHtml += '<td>' + weeks[i] + '</td>'
-    // // }
-
-    // for (let w = 0; w < 6; w++) {
-    //     calendarHtml += '<tr>'
-
-
-    //     for (let d = 0; d < 7; d++) {
-    //         if (w == 0 && d < startDay) {
-    //             // 1行目で1日の曜日の前
-    //             let num = 4
-    //             calendarHtml += '<td class="is-disabled">' + num + '</td>'
-    //         } else if (dayCount > endDayCount) {
-    //             // 末尾の日数を超えた
-    //             let num = 4
-    //             calendarHtml += '<td class="is-disabled">' + num + '</td>'
-    //             dayCount++
-    //         } else {
-    //             calendarHtml += `<td class="calendar_td" data-date="${year}/${month}/${dayCount}">${dayCount}</td>`
-    //             dayCount++
-    //         }
-    //     }
-    //     calendarHtml += '</tr>'
-    // }
-    // calendarHtml += '</table>'
-
-
-    // document.querySelector('#calendar').innerHTML = calendarHtml
-
-    // document.addEventListener("click", function(e) {
-    //     if(e.target.classList.contains("calendar_td")) {
-    //         alert('クリックした日付は' + e.target.dataset.date + 'です')
-    //     }
-    // })
-
     const weeks = ['日', '月', '火', '水', '木', '金', '土']
     const date = new Date()
     let year = date.getFullYear()
@@ -156,7 +128,8 @@ $(function(){
         let dayCount = 1 // 日にちのカウント
         let calendarHtml = '' // HTMLを組み立てる変数
     
-        calendarHtml += '<h3>' + year  + '/' + month + '</h3>'
+        calendarHtml += '<p>ご希望の到着予定日</p>'
+        calendarHtml += '<h3>' + month + '月' + '</h3>'
         calendarHtml += '<table>'
     
         // 曜日の行を作成

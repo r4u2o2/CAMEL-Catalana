@@ -342,32 +342,48 @@ h1 img{
     /* height: 139.573%; */
     z-index: 25;
 }
-.select-box p{
+.select-box .select{
     width: 100%;
-    height: 6.469%;
-    font-size: 1.1vw;
-    color: #707070;
+    padding: 5%;
+    margin-bottom: 5%;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
-    margin-bottom: 4.545%;
-    padding: 4% 0 0 6%;
+}
+.select-box p{
+    font-size: 1.1vw;
+    color: #707070;
+    /* margin-bottom: 5%; */
 }
 /*アコーディオンで現れるエリア*/
 .box {
     /*はじめは非表示*/
     display: none;
+    /* display: block; */
     background: #f3f3f3;
-    margin:0 3% 3% 3%;
+    margin:5% 2% 2% 2%;
     padding: 3%;
 }
-.select-box p:nth-of-type(4){
+.box:nth-of-type(2) {
+    margin:0 2% 2% 2%;
+}
+.box p{
+    margin: 5%;
+}
+option{
+    font-size: 1.1vw;
+    color: #707070;
+    /* margin-bottom: 5%; */
+    margin: 5%;
+}
+.select-box .cart{
     width: 65%;
     height: 6.469%;
     background-color: #A19047;
     color: #ffffff;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.30);
     text-align: center;
+    border-radius: 10px;
     padding: 4.5% 0 0 0;
     margin: 0 auto;
 }
@@ -377,10 +393,13 @@ h1 img{
 
 .calender{
     background-color: #ffffff;
-    padding: 6%;
+    padding: 10%;
     margin-bottom: 4.545%;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+}
+.calender section{
+    width: 100%;
 }
 .calender p{
     font-size: 1.1vw;
@@ -388,8 +407,14 @@ h1 img{
     border-radius: 0;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.30);
     margin-bottom: 10%;
-    padding: 0 0 0 0;
+    margin: -6% 0 10% -6%;
 }
+tbody{
+    width: 100%;
+}
+/* tr{
+    width: 100%;
+} */
 .select-box div h3 {
     font-size: 18px;
     color: #707070;
@@ -398,30 +423,38 @@ h1 img{
 }
 
 .select-box div table {
+    width: 100%;
     border-spacing: 0;
     color: #707070;
     border-collapse: collapse;
     margin: 0 auto;
 }
-
 .select-box div td {
     font-size: 18px;
     color: #707070;
     border-width: 1px 0px;
     border-color: #ddd;
     border-style: solid;
-    padding: 2% 2% 10% 2%;
+    padding: 4% 0 4% 0;
     text-align: center;
 }
-/* .select-box div td::first-line{
-    background-color: thistle;
+/* .is-disabled:hover{
+    background: none;
 } */
-.select-box div td:first-child {
-    color: #D393A7;
+.select-box div .calendar_td:hover {
+    background: url(../img/circle_gray@2x.png) no-repeat center center;
+    background-size: contain;
+}
+.select-box div td:first-child:hover {
+    /* color: #D393A7; */
+    background: url(../img/circle_red@2x.png) no-repeat center center;
+    background-size: contain;
 }
 
-.select-box div td:last-child {
-    color: #A6B2DB;
+.select-box div td:last-child:hover {
+    /* color: #A6B2DB; */
+    background: url(../img/circle_blue@2x.png) no-repeat center center;
+    background-size: contain;
 }
 
 
