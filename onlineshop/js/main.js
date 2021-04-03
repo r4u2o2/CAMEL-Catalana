@@ -79,7 +79,7 @@ $(function(){
         var findElm = $(this).children(".box");//セレクト直後のアコーディオンを行うエリアを取得
 
 
-        if($('.box').hasClass('close')){//セレクト要素にクラス名closeがあれば
+        if($('.select').hasClass('close')){//セレクト要素にクラス名closeがあれば
             $(this).removeClass('close');//クラス名を除去    
         }
         else
@@ -89,7 +89,13 @@ $(function(){
             $(findElm).slideDown(500);//アコーディオンを開く
         }
     });
+
   
+    /**
+     * セレクト
+     */
+
+
 
 
      /**
