@@ -364,7 +364,6 @@ h1 img{
     background-color: #ffffff;
     color: #A19047;
     border: 1px solid;
-    transition-duration: 0.6s;
 }
 .select-box{
     width: 42.692%;
@@ -433,21 +432,29 @@ option{
 
 .calender{
     background-color: #ffffff;
-    padding: 10%;
+    padding: 5.5% 10% 10% 10%;
     margin-bottom: 4.545%;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
+    transition-duration: 0.6s;
+}
+.calender:hover{
+    background-color: #E5EDDE;
 }
 .calender section{
     width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding: 5% 3% 3% 3%;
+    background: #ffffff;
 }
 .calender p{
     font-size: 1.1vw;
     color: #707070;
     border-radius: 0;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.30);
-    margin-bottom: 10%;
-    margin: -6% 0 10% -6%;
+    margin-left: -6%;
+    /* margin: -10% 0 0 -6%; */
 }
 tbody{
     width: 100%;

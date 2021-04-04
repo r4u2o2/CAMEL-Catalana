@@ -52,6 +52,7 @@ nav{
     height: 100vh;
     background-color: #ffffff;
     padding: 4.819% 0 4.819% 1.875%;
+    box-shadow: 10px -10px 15px rgba(0, 0, 0, 0.30);
     position: relative;
     position: absolute;
     top: 0;

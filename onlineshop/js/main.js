@@ -134,7 +134,7 @@ $(function(){
         let dayCount = 1 // 日にちのカウント
         let calendarHtml = '' // HTMLを組み立てる変数
     
-        calendarHtml += '<p>ご希望の到着予定日</p>'
+        // calendarHtml += '<p>ご希望の到着予定日</p>'
         calendarHtml += '<h3>' + month + '月' + '</h3>'
         calendarHtml += '<table>'
     

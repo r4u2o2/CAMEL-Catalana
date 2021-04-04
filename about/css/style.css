@@ -321,51 +321,9 @@ h1 img{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/* .menu-in{
-    animation-name: menu-in;
-    animation-duration: 0.6s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-} */
 
 
 
-/* conceptArea
----------------------- */
-/* .concept .title-area{
-    animation-name: top-in;
-    animation-duration: 0.6s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.concept .img-right{
-    animation-name: right-in-img;
-    animation-duration: 0.6s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.concept .text-area{
-    animation-name: left-in-text;
-    animation-duration: 0.6s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.concept .title-text{
-    animation-name: top-in-text;
-    animation-duration: 0.6s;
-    animation-delay: 0;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-} */
 .concept .img-right{
     background: url(../img/about01.png) no-repeat center center;
     background-size: cover;

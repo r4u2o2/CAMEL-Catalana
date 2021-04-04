@@ -452,7 +452,7 @@ header .menu-button span{
     background-color: #ffffff;
     /* トランジション */
     transition-property: all;
-    transition-duration: 0.2s;
+    transition-duration: 0.6s;
     transition-delay: 0;
     transition-timing-function: ease-in-out;
 }
@@ -493,13 +493,14 @@ nav{
     right: -364px;
     position: fixed;
     z-index: 29;
+    box-shadow: 10px -20px 30px rgba(0, 0, 0, 0.30);
     /* アニメーション */
     animation: unset;
     /* display: none; */
     pointer-events: none; /* 追加 */
     /* トランジション */
     transition-property: all;
-    transition-duration: 0.3s;
+    transition-duration: 0.6s;
     transition-delay: 0;
     transition-timing-function: ease-in-out;
 }
@@ -634,16 +635,26 @@ video{
     background: url(../img/delivery.jpg) no-repeat center center;
     background-size: cover;
 }
-.delivery .more-area{
-    background-color: #A19047;
-    display: flex;
-    align-items: center;
+.delivery .main-block{
+    position: relative;
 }
-.delivery .more-area h3{
+.delivery .more-area{
+    width: 20.578%;
+    height: 9.737%;
+    position: absolute;
+    top: 80.27%;
+    left: -33.184%;
+    font-size: 1.3vw;
     color: #ffffff;
     text-align: center;
-    position: unset;
-    margin: 0 auto;
+    padding: 2.5%;
+    /* margin: 0 auto; */
+    background-color: #A19047;
+}
+.delivery .more-area:hover{
+    background-color: unset;
+    color: #A19047;
+    border: 1px solid;
 }
 
 /* article
