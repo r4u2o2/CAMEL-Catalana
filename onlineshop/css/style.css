@@ -370,6 +370,9 @@ h1 img{
     /* height: 139.573%; */
     z-index: 25;
 }
+#selectClose{
+    display: none;
+}
 .select-box .select{
     width: 100%;
     padding: 5%;
@@ -646,6 +649,7 @@ tbody{
     .select-block{
         z-index: 25;
     }
+    
     .select-box{
         width: 100%;
     }

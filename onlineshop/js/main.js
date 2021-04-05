@@ -70,34 +70,66 @@ $(function(){
     /**
      * プルダウン
      */
+     //アコーディオンをクリックした時の動作
+// $('.title').on('click', function() {//タイトル要素をクリックしたら
+//     $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+      
+//     var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+      
+//     if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+//       $(this).removeClass('close');//クラス名を除去    
+//     }else{//それ以外は
+//       $('.close').removeClass('close'); //クラス名closeを全て除去した後
+//       $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+//       $(findElm).slideDown(500);//アコーディオンを開く
+//     }
+//   });
+
+
     //アコーディオンをクリックした時の動作
     $('.select').on('click', function() {//セレクト要素をクリックしたら
         // console.log('セレクトクリック');
 
+        $(this).children('#selectClose').css('display', 'block');
         $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
       
         var findElm = $(this).children(".box");//セレクト直後のアコーディオンを行うエリアを取得
 
-
         if($('.select').hasClass('close')){//セレクト要素にクラス名closeがあれば
-            $(this).removeClass('close');//クラス名を除去    
+            $('.select').removeClass('close');//クラス名を除去 
+            console.log('クラスあるよ');
         }
         else
         {//それ以外は
             $('.close').removeClass('close'); //クラス名closeを全て除去した後
-            $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+            $('.select').addClass('close');//クリックしたタイトルにクラス名closeを付与し
             $(findElm).slideDown(500);//アコーディオンを開く
         }
+
+        // $(this).children('#selectClose').on('click', function(){
+            
+        // });
+        
+        
+    });
+
+    $('#input').on('click', function(){
+        return false;
+    });
+    $('#button').on('click', function(){
+        $('#input').val();
+        console.log($('#input').val());
+        
     });
 
   
     /**
      * 計算
      */
-    var productSort = [
-        'カメリ・カタラーナ box',
-        'カメリ・カタラーナ paper bag',
-    ]
+    // var productSort = [
+    //     'カメリ・カタラーナ box',
+    //     'カメリ・カタラーナ paper bag',
+    // ]
     // console.log('Sort1:' + productSort);
     // console.log('Sort2:' + productSort[1]);
 
@@ -107,6 +139,13 @@ $(function(){
         '個数：' + 2,
         '個数：' + 3,
     ]
+
+    var productObj = {
+        'カメリ・カタラーナ box' : 3000,
+        'カメリ・カタラーナ paper bag' : 1500,
+    }
+    // console.log(productObj['カメリ・カタラーナ paper bag']);
+
     // console.log('Num1:' + productNum[0]);
 
     var previewName = $('#previewName').text();
@@ -115,24 +154,33 @@ $(function(){
     var previewNum = $('#previewNum').text();
     // console.log(previewNum);
 
-    var price= 3000
-    var platePrice = 100
+    var platePrice = 100;
 
     $('.price').on('click', function(){
         // console.log('金額クリック');
     
-        if(previewName === productSort[0] && previewNum === productNum[1]){
-            // console.log('ボックス選択 個数1');
-            $('#previewPrice').html('<p>' + price*1 + '円</p>');
-        }
-        else if(previewName === productSort[0], previewNum === productNum[2])
+        var price = productObj[previewName];
+            var num = 2;
+            var totalPrice = 0;
+
+        if($('#previewOption').text() === 'オプション：メッセージプレート')
         {
-            // console.log('ボックス選択 個数2');
-            $('#previewPrice').html('<p>' + price*2 + '円</p>');
+            totalPrice = price*num+platePrice;
         }
-        // else if()
+        else if(previewName !== '商品名')
+        {
+            totalPrice = price*num;
+        }
+        $('#previewPrice').html('<p>' + totalPrice + '円</p>');
+
+        // else if(previewName === productSort[0] && previewNum === productNum[1]){
+        //     // console.log('ボックス選択 個数1');
+        //     $('#previewPrice').html('<p>' + price*1 + '円</p>');
+        // }
+        // else if(previewName === productSort[0], previewNum === productNum[2])
         // {
-        //     $('#previewPrice').html('<p>' + price*2 + platePrice + '円</p>');
+        //     // console.log('ボックス選択 個数2');
+        //     $('#previewPrice').html('<p>' + price*2 + '円</p>');
         // }
 
 
