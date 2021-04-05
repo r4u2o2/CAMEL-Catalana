@@ -746,7 +746,6 @@ video{
         width: 13%;
         margin: 4.819% 0 0 2.916%;
     }
-
     .scroll-area{
         width: 5.219%;
         height: 31.788%;
@@ -858,7 +857,7 @@ video{
     header .title-area span{
         font-size: 12px;
         letter-spacing: 1.5px;
-        margin: 7% 0 7% 0;
+        margin: 7% 0 7% ;
     }
     header .title-area p{
         font-size: 12px;

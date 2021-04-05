@@ -92,8 +92,52 @@ $(function(){
 
   
     /**
-     * セレクト
+     * 計算
      */
+    var productSort = [
+        'カメリ・カタラーナ box',
+        'カメリ・カタラーナ paper bag',
+    ]
+    // console.log('Sort1:' + productSort);
+    // console.log('Sort2:' + productSort[1]);
+
+    var productNum = [
+        '個数：' + 0,
+        '個数：' + 1,
+        '個数：' + 2,
+        '個数：' + 3,
+    ]
+    // console.log('Num1:' + productNum[0]);
+
+    var previewName = $('#previewName').text();
+    // console.log('商品名：' + previewName);
+
+    var previewNum = $('#previewNum').text();
+    // console.log(previewNum);
+
+    var price= 3000
+    var platePrice = 100
+
+    $('.price').on('click', function(){
+        // console.log('金額クリック');
+    
+        if(previewName === productSort[0] && previewNum === productNum[1]){
+            // console.log('ボックス選択 個数1');
+            $('#previewPrice').html('<p>' + price*1 + '円</p>');
+        }
+        else if(previewName === productSort[0], previewNum === productNum[2])
+        {
+            // console.log('ボックス選択 個数2');
+            $('#previewPrice').html('<p>' + price*2 + '円</p>');
+        }
+        // else if()
+        // {
+        //     $('#previewPrice').html('<p>' + price*2 + platePrice + '円</p>');
+        // }
+
+
+    });
+
 
 
 
