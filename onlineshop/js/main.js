@@ -97,7 +97,7 @@ $(function(){
 
         if($('.select').hasClass('close')){//セレクト要素にクラス名closeがあれば
             $('.select').removeClass('close');//クラス名を除去 
-            console.log('クラスあるよ');
+            // console.log('クラスあるよ');
         }
         else
         {//それ以外は
@@ -119,7 +119,7 @@ $(function(){
     $('#button').on('click', function(){
         $('#input').val();
         console.log($('#input').val());
-        
+
     });
 
   
@@ -187,6 +187,8 @@ $(function(){
     });
 
 
+
+    
 
 
 
@@ -290,7 +292,7 @@ $(function(){
     document.addEventListener("click", function(e) {
         if(e.target.classList.contains("calendar_td")) {
             // alert('クリックした日付は' + e.target.dataset.date + 'です')
-            $('#preview-date').html('お届け予定日：' + e.target.dataset.date);
+            $('#previewDate').html('お届け予定日：' + e.target.dataset.date);
         }
     })
     

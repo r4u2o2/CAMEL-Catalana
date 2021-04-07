@@ -314,10 +314,10 @@ h1 a img{
 }
 @keyframes menu-in{
     0%{
-        margin-left: -364px;
+        margin-right: -374px;
     }
     100%{
-        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 .top-in{
@@ -500,7 +500,6 @@ header nav.active{
     position: fixed;
     pointer-events: auto; /* 追加 */
 }
-
 .nav-list{
     line-height: 15px;
     position: absolute;
@@ -732,19 +731,36 @@ video{
     header{
         width: 100vw;
         height: 100vh;
-        background: url(../img/header.png) no-repeat -260px 0px;
-        background-size: 235vw;
+        background: url(../img/header_sp.png) no-repeat center center;
+        background-size: 200vw;
     }
     nav{
-        width: 100%;
+        width: 80%;
         height: 100vh;
         background-color: #ffffff;
         padding: 4.819% 0 4.819% 1.875%;
-        margin-right: -370px;
+        margin-right: 0px;
+    }
+    .nav-list li{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    .nav-list span{
+        font-size: 10px;
+    }
+    .bottom-block h3{
+        font-size: 17px;
+    }
+    .bottom-block i{
+        font-size: 20px;
     }
     h1{
         width: 13%;
         margin: 4.819% 0 0 2.916%;
+    }
+    header .menu-button{
+        position: absolute;
+        top: 2%;
     }
     .scroll-area{
         width: 5.219%;
@@ -828,9 +844,9 @@ video{
         margin: 0 0 0 30%;
     }
     header .title-area{
-        width: 60%;
+        width: 45%;
         height: 40%;
-        background-color: unset;
+        /* background-color: ; */
         position: absolute;
         top: 0;
         left: 0;
@@ -857,10 +873,10 @@ video{
     header .title-area span{
         font-size: 12px;
         letter-spacing: 1.5px;
-        margin: 7% 0 7% ;
+        margin: 7% auto 7% 5%;
     }
     header .title-area p{
-        font-size: 12px;
+        font-size: 10px;
         margin: 0 0 0 29%;
     }
         /* common more
