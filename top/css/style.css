@@ -635,7 +635,7 @@ video{
     font-size: 1.3vw;
     color: #ffffff;
     text-align: center;
-    padding: 2.25%;
+    padding: 3% 0 3% 0;
     /* margin: 0 auto; */
     background-color: #A19047;
 }
@@ -740,6 +740,9 @@ video{
         background-color: #ffffff;
         padding: 4.819% 0 4.819% 1.875%;
         margin-right: 0px;
+        position: absolute;
+        top: 0;
+        right: -100%;
     }
     .nav-list li{
         font-size: 20px;
@@ -924,7 +927,7 @@ video{
         font-size: 12px;
         color: #ffffff;
         text-align: center;
-        padding: 6.5%;
+        padding: 6% 0 0 0;
         background-color: #A19047;
     }
         /* top

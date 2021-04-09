@@ -47,8 +47,8 @@ header .menu-button.active span:nth-of-type(3){
     top: 0;
     transform: translateY(12px) rotate(-135deg);
 }
-nav{
-    width: 80%;
+header nav{
+    width: 18.958%;
     height: 100vh;
     background-color: #ffffff;
     padding: 4.819% 0 4.819% 1.875%;
@@ -147,6 +147,12 @@ nav p{
         background-color: #ffffff;
         padding: 4.819% 0 4.819% 1.875%;
         margin-right: 0px;
+        position: absolute;
+        top: 0;
+        right: -100%;
+    }
+    nav.active{
+        width: 80%;
     }
     .nav-list li{
         font-size: 20px;
