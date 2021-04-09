@@ -292,7 +292,7 @@ $(function(){
     document.addEventListener("click", function(e) {
         if(e.target.classList.contains("calendar_td")) {
             // alert('クリックした日付は' + e.target.dataset.date + 'です')
-            $('#previewDate').html('お届け予定日：' + e.target.dataset.date);
+            $('#previewDate').html(e.target.dataset.date);
         }
     })
     

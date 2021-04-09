@@ -327,7 +327,15 @@ h1 img{
     background-size: cover;
     margin-bottom: 5.711%;
 }
-.preview p:nth-of-type(1){
+dl{
+    display: flex;
+}
+dt{
+    color: #707070;
+    font-size: 1.2vw;
+    margin-bottom: 3.092%;
+}
+dd{
     color: #707070;
     font-size: 1.2vw;
     margin-bottom: 3.092%;
@@ -630,11 +638,11 @@ tbody{
         font-size: 12px;
         margin-bottom: 3.092%;
     } */
-    .preview p:nth-of-type(1){
+    dt{
         font-size: 12px;
         margin-bottom: 4.092%;
     }
-    .preview p:nth-of-type(2){
+    dd{
         font-size: 12px;
         margin-bottom: 4.092%;
     }
@@ -645,6 +653,7 @@ tbody{
         position: absolute;
         top: 85.773%;
         right: 14.082%;
+        font-size: 12px;
     }
     #previewPrice{
         font-size: 19px;
@@ -690,42 +699,11 @@ tbody{
         /* margin-bottom: 5%; */
     }
     /*アコーディオンで現れるエリア*/
-    .box {
-        /*はじめは非表示*/
-        display: none;
-        /* display: block; */
-        background: #f3f3f3;
-        margin:5% 2% 2% 2%;
-        padding: 3%;
-    }
     .box p{
         font-size: 12px;
         margin: 5%;
     }
-    option{
-        font-size: 12px;
-        color: #707070;
-        /* margin-bottom: 5%; */
-        margin: 5%;
-    }
-    .select-box .cart{
-        width: 65%;
-        height: 6.469%;
-        background-color: #A19047;
-        color: #ffffff;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.30);
-        text-align: center;
-        border-radius: 10px;
-        padding: 4%;
-        margin: 0 auto;
-        transition-duration: 0.6s;
-    }
-    .select-box .cart:hover{
-        background-color: #ffffff;
-        color: #A19047;
-        border: 1px solid;
-    
-    }
+
 }
 
 @media(min-width:1200px){
