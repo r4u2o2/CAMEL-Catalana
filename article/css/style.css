@@ -282,7 +282,8 @@ h1 img{
 @media(max-width: 750px){
     .title-back{
         width: 100%;
-        font-size: 15vw;
+        font-size: 19vw;
+        letter-spacing: 10px;
         margin: 20% auto 0 auto;
     }
     h1{
@@ -317,6 +318,9 @@ h1 img{
     }
     .title-text h2{
         font-size: 17px;
+    }
+    .title-text p{
+        font-size: 10px;
     }
     .article-block{
         width: 80%;
@@ -353,6 +357,14 @@ h1 img{
     }
     .article-box:nth-of-type(9){
         display: none;
+    }
+    .article-box h3{
+        font-size: 15px;
+        letter-spacing: 1.2px;
+    }
+    .article-box p{
+        font-size: 12px;
+        letter-spacing: 1.2px;
     }
 }
 
