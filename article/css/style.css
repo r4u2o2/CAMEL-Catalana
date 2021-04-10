@@ -15,7 +15,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
 }
 p{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;

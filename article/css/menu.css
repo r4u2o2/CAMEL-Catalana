@@ -163,5 +163,9 @@ nav p{
         font-size: 20px;
     }
 }
-
+@media(min-width:1200px){
+    .nav-list span{
+        font-size: 12px;
+    }
+}
 

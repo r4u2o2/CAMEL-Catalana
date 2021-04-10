@@ -169,4 +169,10 @@ nav p{
     }
 }
 
+@media(min-width:1200px){
+    .nav-list span{
+        font-size: 12px;
+    }
+}
+
 

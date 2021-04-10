@@ -733,24 +733,12 @@ tbody{
     .title-text p{
         font-size: 14px;
     }
-    nav a{
-        font-size: 30px;
-        line-height: 28px;
-    }
-    .nav-list span{
-        font-size: 14px;
-    }
+    
     .share p{
         font-size: 20px;
     }
     nav p{
         font-size: 10px;
-    }
-    .right-buttom-area .button-news p{
-        font-size: 13px;
-    }
-    .right-buttom-area .button-shop p{
-        font-size: 25px;
     }
     .preview .price p{
         font-size: 13px;
