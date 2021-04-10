@@ -39,11 +39,15 @@ main{
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 23vw;
+    font-size: 22vw;
     letter-spacing: 25px;
     color: #F0F0F0;
     text-align: center;
     position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
     z-index: 1;
 }
 

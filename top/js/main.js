@@ -11,11 +11,25 @@ $(function(){
          $('#manuButton').toggleClass('active');
          $('#nav').toggleClass('active');
     });
+
+
+    
+
+
+
+
     // 1. 要素の位置を取得
     var workPosY00 = $('#topArea').offset().top;
     // 2. スクロール位置取得
     $(window).on('scroll', function(){
         var dy = $(this).scrollTop();
+    // /**
+    //  * パララックス
+    //  */
+    //     var backgroundPx = dy - 2200;
+    //     var backgroundPosition = 'top ' + backgroundPx * 0.3 + 'px center'
+    //     $('header').css('background-position', backgroundPosition);
+
         // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());

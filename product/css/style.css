@@ -125,6 +125,11 @@ i{
     color: #F0F0F0;
     text-align: center;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
     z-index: 1;
 }
 
@@ -389,7 +394,7 @@ h1 img{
 @media(max-width: 750px){
     .title-back{
         width: 100%;
-        font-size: 19vw;
+        font-size: 17vw;
         letter-spacing: 10px;
         margin: 20% auto 0 auto;
     }
@@ -462,21 +467,24 @@ h1 img{
     .text-area p{
         font-size: 12px;
     }
-    .reason .title-area{
+    .right-area .title-area{
+        width: 45%;
+        height: 52%;
         position: absolute;
-        /* top: -46%; */
         top: 0;
-        left: auto;
-        right: 5.937%;
+        left: 0;
     }
-    .reason .title-text{
+    .right-area .title-text{
         position: absolute;
         top: 27.354%;
-        left: auto;
-        right: 8.854%;
-        z-index: 23;
+        left: 13.854%;
     }
-    .reason .text-area{
+    .right-area .title-text2{
+        position: absolute;
+        top: 27.354%;
+        left: 13.854%;
+    }
+    .right-area .text-area{
         width: 70%;
         height: 80vh;
         position: absolute;

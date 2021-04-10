@@ -760,8 +760,9 @@ video{
         margin: 4.819% 0 0 2.916%;
     }
     header .menu-button{
-        position: absolute;
+        position: fixed;
         top: 2%;
+        right: 1.875%;
     }
     .scroll-area{
         width: 5.219%;
