@@ -42,7 +42,7 @@ $(function(){
     }
     });
 
-
+    
     /**
      * 画像切り替え（クリックイベント）
      */
@@ -87,22 +87,21 @@ $(function(){
 
 
     //アコーディオンをクリックした時の動作
-    $('.select').on('click', function() {//セレクト要素をクリックしたら
-        // console.log('セレクトクリック');
+    $('.select > p').on('click', function() {//セレクト要素をクリックしたら
+        console.log('セレクトクリック');
 
-        $(this).children('#selectClose').css('display', 'block');
         $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
       
-        var findElm = $(this).children(".box");//セレクト直後のアコーディオンを行うエリアを取得
+        var findElm = $(this).next(".box");//セレクト直後のアコーディオンを行うエリアを取得
 
-        if($('.select').hasClass('close')){//セレクト要素にクラス名closeがあれば
-            $('.select').removeClass('close');//クラス名を除去 
+        if($(this).hasClass('close')){//セレクト要素にクラス名closeがあれば
+            $(this).removeClass('close');//クラス名を除去 
             // console.log('クラスあるよ');
         }
         else
         {//それ以外は
             $('.close').removeClass('close'); //クラス名closeを全て除去した後
-            $('.select').addClass('close');//クリックしたタイトルにクラス名closeを付与し
+            $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
             $(findElm).slideDown(500);//アコーディオンを開く
         }
 
@@ -117,53 +116,64 @@ $(function(){
         return false;
     });
     $('#button').on('click', function(){
-        $('#input').val();
-        console.log($('#input').val());
+        // console.log($('#input').val());
+        $('#previewMessageTitle').css('display', 'block');
+        $('#previewMessage').text($('#input').val());
+    });
 
+    /**
+     * selectクリック
+     */
+    $('#selectName > p').on('click', function(){
+        // console.log('商品名クリック');
+        var productName = $(this).text();
+        $('#previewName').text(productName);
+        // console.log('商品名' + $(this).text());
+    });
+   
+    $('#selectNum > option').on('click', function(){
+        // console.log('個数クリック');
+        var productNum = $(this).text();
+        $('#previewNum').text(productNum);
+        // console.log('商品名' + $(this).text());
+    });
+
+    $('#selectOption > p').on('click', function(){
+        // console.log('オプションクリック');
+        var productOpthion = $(this).text();
+        $('#previewOption').text(productOpthion);
+        // console.log('商品名' + $(this).text());
     });
 
   
     /**
      * 計算
      */
-    // var productSort = [
-    //     'カメリ・カタラーナ box',
-    //     'カメリ・カタラーナ paper bag',
-    // ]
-    // console.log('Sort1:' + productSort);
-    // console.log('Sort2:' + productSort[1]);
-
-    var productNum = [
-        '個数：' + 0,
-        '個数：' + 1,
-        '個数：' + 2,
-        '個数：' + 3,
-    ]
-
-    var productObj = {
-        'カメリ・カタラーナ box' : 3000,
-        'カメリ・カタラーナ paper bag' : 1500,
-    }
-    // console.log(productObj['カメリ・カタラーナ paper bag']);
-
-    // console.log('Num1:' + productNum[0]);
-
-    var previewName = $('#previewName').text();
-    // console.log('商品名：' + previewName);
-
-    var previewNum = $('#previewNum').text();
-    // console.log(previewNum);
-
-    var platePrice = 100;
 
     $('.price').on('click', function(){
         // console.log('金額クリック');
     
+        var productObj = {
+            'カメリ・カタラーナ box' : 3000,
+            'カメリ・カタラーナ paper bag' : 1500,
+        }
+        // console.log(productObj[]);
+    
+        // console.log('Num1:' + productNum[0]);
+    
+        var previewName = $('#previewName').text();
+        // console.log('商品名：' + previewName);
+    
+        var previewNum = $('#previewNum').text();
+        // console.log(previewNum);
+    
+        var platePrice = 100;
         var price = productObj[previewName];
-            var num = 2;
+            var num = previewNum;
+            // console.log('個数' + num);
             var totalPrice = 0;
 
-        if($('#previewOption').text() === 'オプション：メッセージプレート')
+        if($('#previewOption').text() === 'メッセージプレート(+100円)')
         {
             totalPrice = price*num+platePrice;
         }
@@ -172,17 +182,6 @@ $(function(){
             totalPrice = price*num;
         }
         $('#previewPrice').html('<p>' + totalPrice + '円</p>');
-
-        // else if(previewName === productSort[0] && previewNum === productNum[1]){
-        //     // console.log('ボックス選択 個数1');
-        //     $('#previewPrice').html('<p>' + price*1 + '円</p>');
-        // }
-        // else if(previewName === productSort[0], previewNum === productNum[2])
-        // {
-        //     // console.log('ボックス選択 個数2');
-        //     $('#previewPrice').html('<p>' + price*2 + '円</p>');
-        // }
-
 
     });
 

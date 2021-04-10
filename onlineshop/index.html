@@ -96,7 +96,7 @@
             <div class="select-block">
                 <div class="preview">
                     <div class="preview-img"></div>
-                    <p class="preview-name" id="previewName">カメリ・カタラーナ box</p>
+                    <p class="preview-name" id="previewName">商品名</p>
                     <dl>
                         <dt>個数：</dt>
                         <dd id="previewNum"></dd>
@@ -107,7 +107,11 @@
                     </dl>
                     <dl>
                         <dt>オプション：</dt>
-                        <dd  id="previewOption">メッセージ</dd>
+                        <dd  id="previewOption"></dd>
+                    </dl>
+                    <dl>
+                        <dt id="previewMessageTitle">メッセージ内容：</dt>
+                        <dd id="previewMessage"></dd>
                     </dl>
                     <p class="price">合計金額を表示</p>
                     <p class="price01">合計（税込）</p>
@@ -115,15 +119,15 @@
                 </div>
                 <div class="select-box">
                     <section class="select" id="selectButton00">
-                        <p id="selectName">商品</p>
-                        <div class="box">
+                        <p>商品</p>
+                        <div class="box" id="selectName">
                             <p>カメリ・カタラーナ box</p>
                             <p>カメリ・カタラーナ paper bag</p>
                         </div>
                     </section>
                     <section class="select" id="selectButton01">
-                        <p id="selectNum">個数</p>
-                        <div class="box">
+                        <p>個数</p>
+                        <div class="box" id="selectNum">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -140,12 +144,12 @@
                         <p>ご希望の到着予定日</p>
                     </div>
                     <section class="select" id="selectButton02">
-                        <p id="select-option">オプション</p>
-                        <div class="box">
+                        <p>オプション</p>
+                        <div class="box" id="selectOption">
                             <p>なし</p>
                             <p>メッセージプレート(+100円)</p>
                             <input type="text" id="input">
-                            <button id="button">メッセージ</button>
+                            <button id="button">確定</button>
                         </div>
                     </section>
                     <p class="cart" id="cart">カートに入れる</p>
