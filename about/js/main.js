@@ -16,12 +16,16 @@ $(function(){
     console.log('text1:' + workPosY00);
     console.log('text2:' + workPosY01);
     // 2. スクロール位置取得
-    $(window).on('scroll', function(){
+    $(window).on('scroll load', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
+    $('#textArea01').addClass('left-in-text'),
+    $('#rightIn01').addClass('right-in-img'),
+    $('#titleText01').addClass('top-in-text'),
+    $('#titleArea01').addClass('top-in');
     
     if(workPosY00 > dy)
     {

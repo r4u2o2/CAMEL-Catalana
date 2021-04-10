@@ -14,12 +14,14 @@ $(function(){
     var workPosY00 = $('#topArea').offset().top;
     var workPosY01 = $('#selectArea').offset().top;
     // 2. スクロール位置取得
-    $(window).on('scroll', function(){
+    $(window).on('scroll load', function(){
         var dy = $(this).scrollTop();
         // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
+    $('#topArea > #titleArea00').addClass('top-in'),
+        $('#topArea > #titleText00').addClass('top-in-text');
     if(workPosY00 - $(window).height() < dy)
     {
         // $('#leftIn').addClass('left-in-box'),
@@ -185,7 +187,10 @@ $(function(){
 
     });
 
-
+    $('#cart').on('click', function(){
+        window.sessionStorage.setItem(['price'],['3000']);
+        console.log(window.sessionStorage.getItem(['price1']));
+    });
 
     
 

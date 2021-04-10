@@ -38,6 +38,7 @@ i{
     background-color: #f8f8f8;
     position: relative;
     margin-bottom: 20%;
+    overflow: hidden;
 }
 .main-area:nth-of-type(4){
     margin-bottom: 0;
@@ -341,8 +342,8 @@ h1 img{
 .right-area .title-text{
     position: absolute;
     top: 27.354%;
-    left: auto;
-    right: 5.854%;
+    left: 80%;
+    /* right: 5.854%; */
     z-index: 23;
 }
 .right-area .text-area{
@@ -350,8 +351,8 @@ h1 img{
     height: 36.184%;
     position: absolute;
     top: 44.453%;
-    left: auto;
-    right: 15.789%;
+    left: 55%;
+    /* right: 15.789%; */
 }
 .right-area .img-left{
     background: url(../img/about02.png) no-repeat center center;
@@ -372,8 +373,8 @@ h1 img{
 .right-area .title-text2{
     position: absolute;
     top: 27.354%;
-    left: auto;
-    right: 9.854%;
+    left: 80%;
+    /* right: 9.854%; */
     z-index: 23;
 }
 .title-text2 h2{
@@ -429,6 +430,12 @@ h1 img{
         font-size: 10px;
     }
     
+    .title-text2 h2{
+        font-size: 17px;
+    }
+    .title-text2 p{
+        font-size: 10px;
+    }
 
     .main-area{
         height: 160vh;
@@ -502,6 +509,12 @@ h1 img{
         font-size: 23px;
     }
     .title-text h2{
+        font-size: 25px;
+    }
+    .title-text p{
+        font-size: 14px;
+    }
+    .title-text2 h2{
         font-size: 25px;
     }
     .title-text p{

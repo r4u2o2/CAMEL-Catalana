@@ -232,4 +232,6 @@ $(function(){
     //     return false;
     // });
 
+
+    console.log(window.sessionStorage.getItem(['price1']));
 });

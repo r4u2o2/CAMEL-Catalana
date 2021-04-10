@@ -38,6 +38,7 @@ i{
     background-color: #f8f8f8;
     position: relative;
     margin-bottom: 20%;
+    overflow: hidden;
 }
 .main-area:nth-of-type(3){
     margin-bottom: 0;
@@ -158,11 +159,12 @@ h1 img{
     width: 22%;
     height: 46%;
     position: absolute;
-    /* top: -46%; */
-    top: 0;
+    top: -46%;
+    /* top: 0; */
     left: 5.937%;
     z-index: 23;
     opacity: 1;
+    /* animation-delay: 1s; */
 }
 .title-area .title-line{
     width: 1px;
@@ -179,7 +181,7 @@ h1 img{
 }
 .title-text{
     position: absolute;
-    top: 27.354%;
+    top: -8%;
     left: 13.854%;
     z-index: 23;
 }
@@ -212,7 +214,7 @@ h1 img{
 }
 @keyframes top-in-text{
     0%{
-        top: -5%;
+        top: -8%;
     }
     100%{
         top: 27.354%;
@@ -329,6 +331,26 @@ h1 img{
     background-size: cover;
 }
 
+
+/* conceptArea
+---------------------- */
+
+
+.concept .title-area{
+    animation-delay: 0.3s;
+}
+.concept .title-text{
+    animation-delay: 0.3s;
+}
+.concept .img-right{
+    animation-delay: 0.3s;
+}
+.concept .text-area{
+    animation-delay: 0.3s;
+}
+
+
+
 /* reasonArea
 ---------------------- */
 .reason .title-area{
@@ -341,8 +363,8 @@ h1 img{
 .reason .title-text{
     position: absolute;
     top: 27.354%;
-    left: auto;
-    right: 8.854%;
+    left: 80%;
+    /* right: 8.854%; */
     z-index: 23;
 }
 .reason .text-area{
@@ -350,8 +372,8 @@ h1 img{
     height: 36.184%;
     position: absolute;
     top: 44.453%;
-    left: auto;
-    right: 15.789%;
+    left: 55%;
+    /* right: 15.789%; */
 }
 .reason .img-left{
     background: url(../img/about02.png) no-repeat center center;
