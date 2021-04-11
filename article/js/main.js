@@ -13,7 +13,7 @@ $(function(){
     // 2. スクロール位置取得
     $(window).on('scroll load', function(){
         var dy = $(this).scrollTop();
-        console.log('dy' + dy);
+        // console.log('dy' + dy);
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与

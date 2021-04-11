@@ -94,12 +94,14 @@ $(function(){
     {
         $('#textArea03').addClass('left-in-text'),
         $('#rightIn03').addClass('right-in-img'),
+        $('#moreArea03').addClass('left-in-more'),
         $('#titleText03').addClass('top-in-text'),
         $('#titleArea03').addClass('top-in');
     }
     else{
         $('#textArea03').removeClass('left-in-text'),
         $('#rightIn03').removeClass('right-in-img'),
+        $('#moreArea03').removeClass('left-in-more'),
         $('#titleText03').removeClass('top-in-text'),
         $('#titleArea03').removeClass('top-in');
     }

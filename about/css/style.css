@@ -233,12 +233,20 @@ h1 img{
         left: 15.789%;
     }
 }
-@keyframes right-in-text{
+@keyframes left-in-more{
     0%{
-        right: 0;
+        left: 0;
     }
     100%{
-        right: 15.789%;
+        left: 33.184%;
+    }
+}
+@keyframes right-in-text{
+    0%{
+        left: 80%;
+    }
+    100%{
+        left: 55%;
     }
 }
 @keyframes right-in-img{
@@ -270,6 +278,15 @@ h1 img{
     animation-name: left-in-text;
     animation-duration: 0.6s;
     animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.left-in-more{
+    /* アニメーション */
+    animation-name: left-in-more;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -392,7 +409,26 @@ h1 img{
     background: url(../img/package01.png) no-repeat center center;
     background-size: cover;
 }
-
+.package .more-area{
+    width: 20.578%;
+    height: 9.737%;
+    position: absolute;
+    top: 80.27%;
+    left: -33.184%;
+    /* left: 0; */
+    font-size: 1.3vw;
+    color: #ffffff;
+    text-align: center;
+    padding: 3% 0 3% 0;
+    /* margin: 0 auto; */
+    background-color: #A19047;
+    z-index: 35;
+}
+.package .more-area:hover{
+    background-color: unset;
+    color: #A19047;
+    border: 1px solid;
+}
 
 /* レスポンシブ
 ---------------------- */

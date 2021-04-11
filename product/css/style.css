@@ -271,6 +271,14 @@ h1 img{
         opacity: 1;
     }
 }
+@keyframes left-in-more{
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: 45.184%;
+    }
+}
 .left-in-text{
     /* アニメーション */
     animation-name: left-in-text;
@@ -303,6 +311,15 @@ h1 img{
     animation-name: left-in-img;
     animation-duration: 0.6s;
     animation-delay: 0;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.left-in-more{
+    /* アニメーション */
+    animation-name: left-in-more;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -400,6 +417,26 @@ h1 img{
 #howtoArea .img-left{
     background: url(../img/howto.jpg) no-repeat center center;
     background-size: cover;
+}
+#howtoArea .more-area{
+    width: 20.578%;
+    height: 9.737%;
+    position: absolute;
+    top: 80.27%;
+    left: 100%;
+    /* left: 45.184%; */
+    font-size: 1.3vw;
+    color: #ffffff;
+    text-align: center;
+    padding: 3% 0 3% 0;
+    /* margin: 0 auto; */
+    background-color: #A19047;
+    z-index: 25;
+}
+#howtoArea .more-area:hover{
+    background-color: unset;
+    color: #A19047;
+    border: 1px solid;
 }
 
 /* レスポンシブ

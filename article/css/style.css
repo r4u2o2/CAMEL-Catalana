@@ -214,10 +214,10 @@ h1 img{
     z-index: 1;
 }
 .article-block{
-    width: 52%;
-    height: 140vh;
+    width: 65%;
+    height: 120vh;
     position: absolute;
-    top: 30.432%;
+    top: 40.432%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -236,7 +236,7 @@ h1 img{
 }
 .article-box{
     width: 31.789%;
-    height: 30%;
+    height: 40%;
     background-color: #E2DFDC;
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.20);
@@ -257,15 +257,28 @@ h1 img{
     background-size: cover;
 }
 .article-box .article-img03{
-    background: url(../img/article03.png) no-repeat center center;
+    background: url(../img/article03.jpg) no-repeat center center;
+    background-size: cover;
+}
+.article-box .article-img04{
+    background: url(../img/article04.jpg) no-repeat center center;
+    background-size: cover;
+}
+.article-box .article-img05{
+    background: url(../img/article05.jpg) no-repeat center center;
+    background-size: cover;
+}
+.article-box .article-img06{
+    background: url(../img/article06.jpg) no-repeat center center;
     background-size: cover;
 }
 .article-box h3{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     letter-spacing: 1.2px;
+    line-height: 1.5;
     color: #505253;
     margin: 0 4.7% 16px 4.7%;
 }

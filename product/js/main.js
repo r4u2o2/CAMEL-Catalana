@@ -128,12 +128,14 @@ $(function(){
     {
         $('#textArea04').addClass('right-in-text'),
         $('#rightIn04').addClass('left-in-img'),
+        $('#moreArea03').addClass('left-in-more'),
         $('#titleText04').addClass('top-in-text'),
         $('#titleArea04').addClass('top-in');
     }
     else{
         $('#textArea04').removeClass('right-in-text'),
         $('#rightIn04').removeClass('left-in-img'),
+        $('#moreArea03').removeClass('left-in-more'),
         $('#titleText04').removeClass('top-in-text'),
         $('#titleArea04').removeClass('top-in');
     }
