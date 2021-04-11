@@ -234,10 +234,10 @@ h1 img{
 }
 @keyframes right-in-text{
     0%{
-        right: 0;
+        left: 75%;
     }
     100%{
-        right: 15.789%;
+        left: 55%;
     }
 }
 @keyframes right-in-img{
@@ -329,13 +329,14 @@ h1 img{
 }
 
 
-
-.concept .img-right{
-    background: url(../img/about01.png) no-repeat center center;
+/* product1Area
+---------------------- */
+.product01 .img-right{
+    background: url(../img/product03.jpg) no-repeat center center;
     background-size: cover;
 }
 
-/* reasonArea
+/* product2Area
 ---------------------- */
 .right-area .title-area{
     position: absolute;
@@ -357,18 +358,19 @@ h1 img{
     position: absolute;
     top: 44.453%;
     left: 55%;
+    /* right: auto; */
     /* right: 15.789%; */
 }
 .right-area .img-left{
-    background: url(../img/about02.png) no-repeat center center;
+    background: url(../img/product02.jpg) no-repeat center center;
     background-size: cover;
 }
 
 
-/* howtoArea
+/* product3Area
 ---------------------- */
 .package .img-right{
-    background: url(../img/about03.png) no-repeat center center;
+    background: url(../img/product.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -387,6 +389,10 @@ h1 img{
 }
 .title-text2 p{
     font-size: 1vw;
+}
+#howtoArea .img-left{
+    background: url(../img/about02.png) no-repeat center center;
+    background-size: cover;
 }
 
 /* レスポンシブ

@@ -620,7 +620,7 @@ video{
 /* delivery
 ---------------------- */
 .delivery .img-right{
-    background: url(../img/delivery.jpg) no-repeat center center;
+    background: url(../img/package02.png) no-repeat center center;
     background-size: cover;
 }
 /* .delivery .main-block{

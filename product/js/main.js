@@ -113,7 +113,7 @@ $(function(){
     });
 
     // /**
-    //  * product3Area
+    //  * howtoArea
     //  */
     // 1. 要素の位置を取得
     var workPosY03 = $('#howtoArea').offset().top;
