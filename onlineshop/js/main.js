@@ -156,7 +156,7 @@ $(function(){
         // console.log('金額クリック');
     
         var productObj = {
-            'カメリ・カタラーナ box' : 3000,
+            'カメリ・カタラーナ box' : 1800,
             'カメリ・カタラーナ paper bag' : 1500,
         }
         // console.log(productObj[]);
