@@ -817,7 +817,7 @@ video{
         /* common title
     ---------------------- */
     .title-area{
-        width: 45%;
+        width: 170px;
         height: 30%;
         position: absolute;
         top: 24%;
@@ -846,7 +846,7 @@ video{
         margin: 0 0 0 30%;
     }
     header .title-area{
-        width: 45%;
+        width: 170px;
         height: 40%;
         /* background-color: ; */
         position: absolute;

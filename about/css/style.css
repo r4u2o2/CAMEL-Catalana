@@ -243,10 +243,10 @@ h1 img{
 }
 @keyframes right-in-text{
     0%{
-        left: 80%;
+        right: 0;
     }
     100%{
-        left: 55%;
+        right: 15.789%;
     }
 }
 @keyframes right-in-img{
@@ -394,8 +394,8 @@ h1 img{
     height: 36.184%;
     position: absolute;
     top: 44.453%;
-    left: 55%;
-    /* right: 15.789%; */
+    left: auto;
+    right: 15.789%;
 }
 .reason .img-left{
     background: url(../img/about02.png) no-repeat center center;
@@ -448,11 +448,11 @@ h1 img{
     /* common title
     ---------------------- */
     .title-area{
-        width: 45%;
+        width: 170px;
         height: 52%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 2%;
     }
     .title-area .title-line{
         width: 1px;
@@ -503,17 +503,16 @@ h1 img{
         font-size: 12px;
     }
     .reason .title-area{
+        width: 170px;
+        height: 52%;
         position: absolute;
-        /* top: -46%; */
         top: 0;
-        left: auto;
-        right: 5.937%;
+        left: 2%;
     }
     .reason .title-text{
         position: absolute;
         top: 27.354%;
-        left: auto;
-        right: 8.854%;
+        left: 13.854%;
         z-index: 23;
     }
     .reason .text-area{
@@ -526,21 +525,38 @@ h1 img{
     }
     .img-right{
         width: 100%;
-        height: 62vh;
+        height: 55vh;
     }
     .deco-left{
         width: 100%;
-        height: 62vh;
+        height: 55vh;
     }
     .img-left{
         width: 100%;
-        height: 62vh;
+        height: 55vh;
     }
     .deco-right{
         width: 100%;
-        height: 62vh;
+        height: 55vh;
     }
-
+    .package .more-area{
+        width: 62.578%;
+        height: 4.737%;
+        position: absolute;
+        top: 51.87%;
+        right: 0;
+        font-size: 12px;
+        color: #ffffff;
+        text-align: center;
+        padding: 5%;
+        background-color: #A19047;
+    }
+    .package .img-right{
+        height: 55vh;
+    }
+    .package .deco-right{
+        height: 55vh;
+    }
 
 }
 

@@ -312,11 +312,11 @@ h1 img{
     /* common title
     ---------------------- */
     .title-area{
-        width: 45%;
+        width: 170px;
         height: 52%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 2%;
     }
     .title-area .title-line{
         width: 1px;
