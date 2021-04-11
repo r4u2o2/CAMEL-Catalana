@@ -69,6 +69,12 @@ i{
     margin-bottom: 7.819%;
     color: #505253;
 }
+.text-area span{
+    font-size: 2.5vw;
+    opacity: 0.6;
+    border-bottom: solid 3px #A19047;
+    color: #505253;
+}
 .text-area p{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
@@ -77,6 +83,7 @@ i{
     letter-spacing: 1.25px;
     line-height: 2.5;
 }
+
 .img-right{
     width: 48.157%;
     height: 100%;
@@ -332,7 +339,7 @@ h1 img{
 /* product1Area
 ---------------------- */
 .product01 .img-right{
-    background: url(../img/product03.jpg) no-repeat center center;
+    background: url(../img/product1.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -391,7 +398,7 @@ h1 img{
     font-size: 1vw;
 }
 #howtoArea .img-left{
-    background: url(../img/about02.png) no-repeat center center;
+    background: url(../img/howto.jpg) no-repeat center center;
     background-size: cover;
 }
 
