@@ -90,7 +90,7 @@ $(function(){
 
     //アコーディオンをクリックした時の動作
     $('.select > p').on('click', function() {//セレクト要素をクリックしたら
-        console.log('セレクトクリック');
+        // console.log('セレクトクリック');
 
         $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
       
@@ -130,6 +130,8 @@ $(function(){
         // console.log('商品名クリック');
         var productName = $(this).text();
         $('#previewName').text(productName);
+        $('#selectButton00 > p').text(productName);
+        $('.box').slideUp(500);
         // console.log('商品名' + $(this).text());
     });
    
@@ -137,6 +139,8 @@ $(function(){
         // console.log('個数クリック');
         var productNum = $(this).text();
         $('#previewNum').text(productNum);
+        $('#selectButton01 > p').text(productNum);
+        $('.box').slideUp(500);
         // console.log('商品名' + $(this).text());
     });
 
@@ -144,6 +148,8 @@ $(function(){
         // console.log('オプションクリック');
         var productOpthion = $(this).text();
         $('#previewOption').text(productOpthion);
+        $('#selectButton02 > p').text(productOpthion);
+        $('.box').slideUp(500);
         // console.log('商品名' + $(this).text());
     });
 
@@ -187,9 +193,14 @@ $(function(){
 
     });
 
+
+    /**
+     * カート
+     */
     $('#cart').on('click', function(){
-        window.sessionStorage.setItem(['price'],['3000']);
-        console.log(window.sessionStorage.getItem(['price1']));
+        var totalPrice = $('#previewPrice').text();
+        window.sessionStorage.setItem(['price'],[totalPrice]);
+        console.log(window.sessionStorage.getItem(['price']));
     });
 
     
@@ -297,6 +308,8 @@ $(function(){
         if(e.target.classList.contains("calendar_td")) {
             // alert('クリックした日付は' + e.target.dataset.date + 'です')
             $('#previewDate').html(e.target.dataset.date);
+            $('#calender > p').html(e.target.dataset.date);
+            // console.log(e.target.dataset.date);
         }
     })
     

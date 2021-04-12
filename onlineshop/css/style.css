@@ -409,16 +409,29 @@ dd{
     margin:5% 2% 2% 2%;
     padding: 3%;
 }
-
-
+.select  span{
+    color: #D393A7;
+}
+.calender span{
+    color: #D393A7;
+}
 .box p{
     margin: 5%;
 }
+.box p:hover{
+    color: #ffffff;
+    background-color: #BEB9B3;
+}
+
 option{
     font-size: 1.1vw;
     color: #707070;
     /* margin-bottom: 5%; */
     margin: 5%;
+}
+option:hover{
+    color: #ffffff;
+    background-color: #BEB9B3;
 }
 .select-box .cart{
     width: 65%;
@@ -449,6 +462,11 @@ button{
     background-color: #A19047;
     padding: 2% 4% 2% 4%;
     border-radius: 4px;
+}
+button:hover{
+    background-color: unset;
+    color: #A19047;
+    border: 1px solid;
 }
 #previewMessageTitle{
     display: none;
@@ -642,7 +660,6 @@ tbody{
         left: 5.922%; */
         z-index: 23;
         /* margin: 0 auto 30px auto; */
-
     }
     .preview-img{
         height: 60%;
@@ -713,6 +730,9 @@ tbody{
     .box p{
         font-size: 12px;
         margin: 5%;
+    }
+    option{
+        font-size: 12px;
     }
 
 }
