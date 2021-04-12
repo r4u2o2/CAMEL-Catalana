@@ -20,18 +20,24 @@ $(function(){
     // 3. 条件文
     // console.log($(window).height());
     // 4. 対象要素にクラスの付与
-    $('#topArea > #titleArea00').addClass('top-in'),
+        $('.img-block').addClass('left-in-img'),
+        $('#mainImage').addClass('right-in-img'),
+        $('#topArea > #titleArea00').addClass('top-in'),
         $('#topArea > #titleText00').addClass('top-in-text');
     if(workPosY00 - $(window).height() < dy)
     {
         // $('#leftIn').addClass('left-in-box'),
         // $('#rightIn00').addClass('right-in-img'),
+        $('.img-block').addClass('left-in-img'),
+        $('#mainImage').addClass('right-in-img'),
         $('#topArea > #titleArea00').addClass('top-in'),
         $('#topArea > #titleText00').addClass('top-in-text');
     }
     else{
         // $('#leftIn').removeClass('left-in-box'),
         // $('#rightIn00').removeClass('right-in-img'),
+        $('.img-block').removeClass('left-in-img'),
+        $('#mainImage').removeClass('right-in-img'),
         $('#topArea > #titleArea00').removeClass('top-in'),
         $('#topArea > #titleText00').removeClass('top-in-text');
     }
@@ -39,6 +45,8 @@ $(function(){
     {
         // $('#leftIn').removeClass('left-in-box'),
         // $('#rightIn00').removeClass('right-in-img'),
+        $('.img-block').removeClass('left-in-img'),
+        $('#mainImage').removeClass('right-in-img'),
         $('#topArea > #titleArea00').removeClass('top-in'),
         $('#topArea > #titleText00').removeClass('top-in-text');
     }
