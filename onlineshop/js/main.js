@@ -211,7 +211,9 @@ $(function(){
         console.log(window.sessionStorage.getItem(['price']));
     });
 
-    
+    $('#cart2').on('click', function(){
+        $(this).load('../cart.html');
+    });
 
 
 
@@ -231,7 +233,7 @@ $(function(){
             const calendarHtml = createCalendar(year, month)
             const sec = document.createElement('section')
             sec.innerHTML = calendarHtml
-            document.querySelector('#calendar').appendChild(sec)
+            document.querySelector('#calender').appendChild(sec)
     
             month++
             if (month > 12) {
@@ -317,6 +319,7 @@ $(function(){
             // alert('クリックした日付は' + e.target.dataset.date + 'です')
             $('#previewDate').html(e.target.dataset.date);
             $('#calender > p').html(e.target.dataset.date);
+            console.log($('#calender > p').text());
             // console.log(e.target.dataset.date);
         }
     })
