@@ -1,23 +1,52 @@
-<div class="preview cart2">
-    <div class="preview-img"></div>
-    <p class="preview-name" id="previewName">商品名</p>
-    <dl>
-        <dt>個数：</dt>
-        <dd id="previewNum"></dd>
-    </dl>
-    <dl>
-        <dt>お届け予定日：</dt>
-        <dd id="previewDate"></dd>
-    </dl>
-    <dl>
-        <dt>オプション：</dt>
-        <dd  id="previewOption"></dd>
-    </dl>
-    <dl>
-        <dt id="previewMessageTitle">メッセージ内容：</dt>
-        <dd id="previewMessage"></dd>
-    </dl>
-    <p class="price">合計金額を表示</p>
-    <p class="price01">合計（税込）</p>
-    <p id="previewPrice">0円</p>
-</div>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMELI Catalana カメリ・カタラーナ</title>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'sis2wgc',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+    <link rel="stylesheet" href="https://use.typekit.net/ums2pbg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <div class="cart-close">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="preview cart2">
+        <div class="preview-img"></div>
+        <p class="preview-name" id="previewName">商品名</p>
+        <dl>
+            <dt>個数：</dt>
+            <dd id="previewNum"></dd>
+        </dl>
+        <dl>
+            <dt>お届け予定日：</dt>
+            <dd id="previewDate"></dd>
+        </dl>
+        <dl>
+            <dt>オプション：</dt>
+            <dd  id="previewOption"></dd>
+        </dl>
+        <dl>
+            <dt id="previewMessageTitle">メッセージ内容：</dt>
+            <dd id="previewMessage"></dd>
+        </dl>
+        <p class="price">購入画面へすすむ</p>
+        <p class="price01">合計（税込）</p>
+        <p id="previewPrice">0円</p>
+    </div>
+</body>
