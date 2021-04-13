@@ -407,6 +407,7 @@ dd{
     color: #A19047;
     border: 1px solid;
 }
+
 #cart2.overlay{
     width: 100vw;
     height: 100vh;
@@ -623,7 +624,7 @@ tbody{
         font-size: 19vw;
     }
     h1{
-        width: 13%;
+        width: 50px;
         margin: 4.819% 0 0 2.916%;
     }
     
