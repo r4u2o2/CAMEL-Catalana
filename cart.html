@@ -26,3 +26,13 @@
         <p id="previewPrice">0円</p>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="js/shop.js"></script> -->
+    <script>
+        $(function(){
+            $('#previewName').html(window.sessionStorage.getItem(['previewName']));
+            $('#previewNum').html(window.sessionStorage.getItem(['previewNum']));
+            $('#previewDate').html(window.sessionStorage.getItem(['previewDate']));
+            $('#previewOption').html(window.sessionStorage.getItem(['previewOption']));
+        });
+    </script>

@@ -123,7 +123,11 @@ $(function(){
         var productName = $(this).text();
         $('#previewName').text(productName);
         $('#selectButton00 > p').text(productName);
+        window.sessionStorage.setItem(['previewName'],[productName]);
         $('.box').slideUp(500);
+        var previewName = $('#previewName').text();
+        var previewNum = $('#previewNum').text();
+        calcPrice(previewName, previewNum);
         // console.log('商品名' + $(this).text());
     });
    
@@ -132,16 +136,24 @@ $(function(){
         var productNum = $(this).text();
         $('#previewNum').text(productNum);
         $('#selectButton01 > p').text(productNum);
+        window.sessionStorage.setItem(['previewNum'],[productNum]);
         $('.box').slideUp(500);
+        var previewName = $('#previewName').text();
+        var previewNum = $('#previewNum').text();
+        calcPrice(previewName, previewNum);
         // console.log('商品名' + $(this).text());
     });
 
     $('#selectOption > p').on('click', function(){
         // console.log('オプションクリック');
-        var productOpthion = $(this).text();
-        $('#previewOption').text(productOpthion);
-        $('#selectButton02 > p').text(productOpthion);
+        var previewOption = $(this).text();
+        $('#previewOption').text(previewOption);
+        $('#selectButton02 > p').text(previewOption);
+        window.sessionStorage.setItem(['previewOption'],[previewOption]);
         $('.box').slideUp(500);
+        var previewName = $('#previewName').text();
+        var previewNum = $('#previewNum').text();
+        calcPrice(previewName, previewNum);
         // console.log('商品名' + $(this).text());
     });
 
@@ -152,36 +164,40 @@ $(function(){
 
     $('.price').on('click', function(){
         // console.log('金額クリック');
-    
-        var productObj = {
-            'カメリ・カタラーナ box' : 1800,
-            'カメリ・カタラーナ paper bag' : 1500,
-        }
-        // console.log(productObj[]);
-    
-        // console.log('Num1:' + productNum[0]);
-    
         var previewName = $('#previewName').text();
-        // console.log('商品名：' + previewName);
-    
         var previewNum = $('#previewNum').text();
-        // console.log(previewNum);
-    
-        var platePrice = 100;
-        var price = productObj[previewName];
-            var num = previewNum;
-            // console.log('個数' + num);
-            var totalPrice = 0;
+        calcPrice(previewName, previewNum);
 
-        if($('#previewOption').text() === 'メッセージプレート(+100円)')
-        {
-            totalPrice = price*num+platePrice;
-        }
-        else if(previewName !== '商品名')
-        {
-            totalPrice = price*num;
-        }
-        $('#previewPrice').html('<p>' + totalPrice + '円</p>');
+
+        // var productObj = {
+        //     'カメリ・カタラーナ box' : 1800,
+        //     'カメリ・カタラーナ paper bag' : 1500,
+        // }
+        // // console.log(productObj[]);
+    
+        // // console.log('Num1:' + productNum[0]);
+    
+        // var previewName = $('#previewName').text();
+        // // console.log('商品名：' + previewName);
+    
+        // var previewNum = $('#previewNum').text();
+        // // console.log(previewNum);
+    
+        // var platePrice = 100;
+        // var price = productObj[previewName];
+        //     var num = previewNum;
+        //     // console.log('個数' + num);
+        //     var totalPrice = 0;
+
+        // if($('#previewOption').text() === 'メッセージプレート(+100円)')
+        // {
+        //     totalPrice = price*num+platePrice;
+        // }
+        // else if(previewName !== '商品名')
+        // {
+        //     totalPrice = price*num;
+        // }
+        // $('#previewPrice').html('<p>' + totalPrice + '円</p>');
 
     });
 
@@ -190,19 +206,11 @@ $(function(){
      * カート
      */
     $('#cart').on('click', function(){
-        var totalPrice = $('#previewPrice').text();
-        window.sessionStorage.setItem(['data'],[totalPrice]);
-        console.log(window.sessionStorage.getItem(['data']));
+        $('#overlay').load('cart.html');
+        $('#overlay').addClass('overlay');
 
-
-
-        $('#cart2').load('cart.html');
-
-        
-        $('#cart2').addClass('overlay');
-
-        $('#cart2').on('click', function(){
-                     $(this).removeClass('overlay');
+        $('#overlay').on('click', function(){
+                     window.location.reload();
         });
     });
 
@@ -326,12 +334,72 @@ $(function(){
             // alert('クリックした日付は' + e.target.dataset.date + 'です')
             $('#previewDate').html(e.target.dataset.date);
             $('#calender > p').html(e.target.dataset.date);
-            console.log($('#calender > p').text());
+            // console.log($('#calender > p').text());
             // console.log(e.target.dataset.date);
+            var previewName = $('#previewName').text();
+        var previewNum = $('#previewNum').text();
+        calcPrice(previewName, previewNum);
         }
     })
     
     showCalendar(year, month)
 
 
+    $('#previewName').html(window.sessionStorage.getItem(['previewName']));
+    $('#previewNum').html(window.sessionStorage.getItem(['previewNum']));
+    $('#previewDate').html(window.sessionStorage.getItem(['previewDate']));
+    $('#previewOption').html(window.sessionStorage.getItem(['previewOption']));
+
+
 });
+
+function calcPrice(previewName, previewNum){
+    console.log(previewName);
+    console.log(previewNum);
+    var previewOption = $('#previewOption').text();
+    var previewDate = $('#previewDate').text();
+    // $('#previewOption').text(previewOption);
+    var productObj = {
+        'カメリ・カタラーナ box' : 1800,
+        'カメリ・カタラーナ paper bag' : 1500,
+        '商品名' : 0,
+    }
+    if(previewNum === '')
+    {
+        previewNum = 0;
+    }
+    // console.log(productObj[]);
+
+    // console.log('Num1:' + productNum[0]);
+
+    // var previewName = $('#previewName').text();
+    // console.log('商品名：' + previewName);
+
+    // var previewNum = $('#previewNum').text();
+    // console.log(previewNum);
+
+    var platePrice = 100;
+    var price = productObj[previewName];
+        var num = previewNum;
+        // console.log('個数' + num);
+        var totalPrice = 0;
+
+    if($('#previewOption').text() === 'メッセージプレート(+100円)')
+    {
+        totalPrice = price*num+platePrice;
+    }
+    else if(previewName !== '商品名')
+    {
+        totalPrice = price*num;
+    }
+    $('#previewPrice').html('<p>' + totalPrice + '円</p>');
+    
+    window.sessionStorage.setItem(['previewName'],[previewName]);
+    console.log(window.sessionStorage.getItem(['previewName']));
+    window.sessionStorage.setItem(['previewNum'],[previewNum]);
+    console.log(window.sessionStorage.getItem(['previewNum']));
+    window.sessionStorage.setItem(['previewDate'],[previewDate]);
+    console.log(window.sessionStorage.getItem(['previewDate']));
+    window.sessionStorage.setItem(['previewOption'],[previewOption]);
+    console.log(window.sessionStorage.getItem(['previewOption']));
+}
