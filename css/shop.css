@@ -31,6 +31,7 @@ a{
 i{
     color: #BEB9B3;
 }
+
 main{
     height: 223vh;
     background-color: #f8f8f8;
@@ -52,28 +53,7 @@ main{
 
 
 
-/* common fixed
----------------------- */
-h1{
-    width: 5.052%;
-    margin: 5.858% 0 0 2.916%;
-    position: fixed;
-    z-index: 30;
-}
-h1 img{
-    width: 100%;
-}
-.menu{
-    width: 30px;
-    position: absolute;
-    left: 2.708%;
-    bottom: 2.78%;
-    z-index: 29;
-    position: fixed;
-}
-.menu img{
-    width: 100%;
-}
+
 
 /* common title
 ---------------------- */
@@ -355,23 +335,23 @@ h1 img{
 }
 .preview-img{
     width: 100%;
-    height: 67.216%;
+    height: 60.216%;
     background: url(../img/package02.png) no-repeat center center;
     background-size: cover;
-    margin-bottom: 5.711%;
+    margin-bottom: 2.711%;
 }
 dl{
     display: flex;
 }
 dt{
     color: #707070;
-    font-size: 1.2vw;
-    margin-bottom: 3.092%;
+    font-size: 12px;
+    margin-bottom: 2.092%;
 }
 dd{
     color: #707070;
-    font-size: 1.2vw;
-    margin-bottom: 3.092%;
+    font-size: 12px;
+    margin-bottom: 2.092%;
 }
 .preview-name{
     font-size: 1.7vw;
@@ -399,7 +379,7 @@ dd{
     border-radius: 3px;
     padding: 2.5%;
     text-align: center;
-    font-size: 0.7vw;
+    font-size: 10px;
     transition-duration: 0.6s;
 }
 .preview .price:hover{
@@ -418,11 +398,13 @@ dd{
     z-index: 25;
 }
 .cart2{
-    height: 70%;
-    top: 15%;
+    width: 40%;
+    height: 80%;
+    top: 5%;
     margin: 0 auto;
     z-index: 26;
 }
+
 .cart-close{
     width: 40px;
     height: 40px;
@@ -625,7 +607,6 @@ tbody{
     }
     h1{
         width: 50px;
-        margin: 4.819% 0 0 2.916%;
     }
     
     
@@ -839,14 +820,15 @@ tbody{
     nav p{
         font-size: 10px;
     }
-    .preview .price p{
-        font-size: 13px;
+    .preview .price{
+        font-size: 12px;
+        /* padding: 1%; */
     }
     dt, dd{
-        font-size: 15px;
+        font-size: 13px;
     }
     .preview-name{
-        font-size: 22px;
+        font-size: 18px;
     }
 
 }

@@ -9,16 +9,19 @@ $(function(){
    });
     // 1. 要素の位置を取得
     var workPosY00 = $('#articleBox').offset().top;
-    console.log('text1:' + workPosY00);
     // 2. スクロール位置取得
     $(window).on('scroll load', function(){
+        console.log('ロード');
         var dy = $(this).scrollTop();
-        // console.log('dy' + dy);
-    // 3. 条件文
-    // console.log($(window).height());
+
+
     // 4. 対象要素にクラスの付与
-    $('#titleText01').addClass('top-in-text'),
-        $('#titleArea01').addClass('top-in');
+    setTimeout(function(){
+        $('#titleText01').addClass('top-in-text');
+    $('#titleArea01').addClass('top-in');
+   },1000);
+    
+
     if(workPosY00 > dy)
     {
         $('#titleText01').addClass('top-in-text'),

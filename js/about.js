@@ -13,15 +13,12 @@ $(function(){
     // 1. 要素の位置を取得
     var workPosY00 = $('#textArea01').offset().top;
     var workPosY01 = $('#reasonArea').offset().top;
-    console.log('text1:' + workPosY00);
-    console.log('text2:' + workPosY01);
+    var workPosY02 = $('#packageArea').offset().top;
     // 2. スクロール位置取得
     $(window).on('scroll load', function(){
         var dy = $(this).scrollTop();
-        // console.log('dy' + dy);
-    // 3. 条件文
-    // console.log($(window).height());
-    // 4. 対象要素にクラスの付与
+
+        // 4. 対象要素にクラスの付与
     $('#textArea01').addClass('left-in-text'),
     $('#rightIn01').addClass('right-in-img'),
     $('#titleText01').addClass('top-in-text'),
@@ -41,21 +38,7 @@ $(function(){
         $('#titleText01').removeClass('top-in-text'),
         $('#titleArea01').removeClass('top-in');
     }
-    });
-    
-    // /**
-    //  * reasonArea
-    //  */
-    // 1. 要素の位置を取得
-    var workPosY01 = $('#reasonArea').offset().top;
-    var workPosY02 = $('#packageArea').offset().top;
-    // 2. スクロール位置取得
-    $(window).on('scroll', function(){
-        var dy = $(this).scrollTop();
-        // console.log('dy' + dy);
-    // 3. 条件文
-    // console.log($(window).height());
-    // 4. 対象要素にクラスの付与
+
     if(workPosY01 - $(window).height() < dy)
     {
         $('#textArea02').addClass('right-in-text'),
@@ -76,20 +59,9 @@ $(function(){
         $('#titleText02').removeClass('top-in-text'),
         $('#titleArea02').removeClass('top-in');
     }
-    });
-    
-    // /**
-    //  * packageArea
-    //  */
-    // 1. 要素の位置を取得
-    var workPosY02 = $('#packageArea').offset().top;
-    // 2. スクロール位置取得
-    $(window).on('scroll', function(){
-        var dy = $(this).scrollTop();
-        // console.log('dy' + dy);
-    // 3. 条件文
-    // console.log($(window).height());
-    // 4. 対象要素にクラスの付与
+
+
+
     if(workPosY02 - $(window).height() < dy)
     {
         $('#textArea03').addClass('left-in-text'),
@@ -105,45 +77,9 @@ $(function(){
         $('#titleText03').removeClass('top-in-text'),
         $('#titleArea03').removeClass('top-in');
     }
-    });
-    // // 1. 要素の位置を取得
-    // var workPosY02 = $('#productBlock > #textArea02').offset().top;
-    // console.log('workPosY02:' + workPosY02);
-    // var workPosY03 = $('#deliveryArea').offset().top;
-    // console.log('workPosY03:' + workPosY03);
-    // // 2. スクロール位置取得
-    // $(window).on('scroll', function(){
-    //     var dy = $(this).scrollTop();
-    //     // console.log('dy' + dy);
-    // // 3. 条件文
-    // // console.log($(window).height());
-    // // 4. 対象要素にクラスの付与
-    // if(workPosY02 - $(window).height() < dy)
-    // {
-    //     $('#productArea > #titleArea02').addClass('top-in'),
-    //     $('#moreArea02').addClass('left-in-more'),
-    //     $('#productBlock > #textArea02').addClass('left-in-text'),
-    //     $('#rightIn02').addClass('right-in-img'),
-    //     $('#manuLine02').css('opacity','1');
-    // }
-    // else
-    // {
-    //     $('#productArea > #titleArea02').removeClass('top-in'),
-    //     $('#moreArea02').removeClass('left-in-more'),
-    //     $('#productBlock > #textArea02').removeClass('left-in-text'),
-    //     $('#rightIn02').removeClass('right-in-img'),
-    //     $('#manuLine02').css('opacity','0');
-    // }
-    // if(workPosY03 - $(window).height() < dy)
-    // {
-    //     $('#productArea > #titleArea02').removeClass('top-in'),
-    //     $('#moreArea02').removeClass('left-in-more'),
-    //     $('#productBlock > #textArea02').removeClass('left-in-text'),
-    //     $('#rightIn02').removeClass('right-in-img'),
-    //     $('#manuLine02').css('opacity','0');
-    // }
-    // });
 
+    });
+    
 
 
 });

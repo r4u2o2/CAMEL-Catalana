@@ -5,10 +5,11 @@ $(function(){
     /**
      * ハンバーガーメニュー
      */
-    $('#manuButton').on('click', function(){
+    $('#menuButton').on('click', function(){
          console.log('menuクリック');
-         $('#manuButton > span').css('background-color', '#BEB9B3'),
-         $('#manuButton').toggleClass('active');
+         $('#menuButton > span').css('background-color', '#BEB9B3'),
+         $('.fa-shopping-cart').css('color', '#BEB9B3'),
+         $('#menuButton').toggleClass('active');
          $('#nav').toggleClass('active');
     });
 
@@ -36,11 +37,13 @@ $(function(){
     // 4. 対象要素にクラスの付与
     if(workPosY00 - $(window).height() < dy)
     {
-        $('#manuButton > span').css('background-color', '#BEB9B3'),
+        $('#menuButton > span').css('background-color', '#BEB9B3'),
+        $('.fa-shopping-cart').css('color', '#BEB9B3'),
         $('#scrollArea').css('opacity', '0');
     }
     else{
-        $('#manuButton > span').css('background-color', '#ffffff'),
+        $('#menuButton > span').css('background-color', '#ffffff'),
+        $('.fa-shopping-cart').css('color', '#ffffff'),
         $('#scrollArea').css('opacity', '1');
     }
     // if(workPosY00 - $(window).height() < dy)

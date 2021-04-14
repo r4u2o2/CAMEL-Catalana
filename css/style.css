@@ -154,12 +154,24 @@ circle{
 ---------------------- */
 h1{
     width: 5.052%;
-    margin: 4.819% 0 0 2.916%;
     position: fixed;
+    top: 4.819%;
+    left: 2.916%;
     z-index: 35;
 }
 h1 a img{
     width: 100%;
+}
+.fa-shopping-cart{
+    position: fixed; /* 追加 *//* 変更 */
+    top: 4.819%;
+    right: 7.375%;
+    font-size: 22px;
+    z-index: 30;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-delay: 0;
+    transition-timing-function: ease-in-out;
 }
 .scroll-area{
     width: 5.219%;
@@ -428,7 +440,7 @@ header .menu-button{
     display: block;
     position: fixed; /* 追加 *//* 変更 */
     top: 4.819%;
-    right: 1.875%;
+    right: 2.916%;
     z-index: 30; /* 追加 */
     width: 32px; /* 追加 */
     height: 24px; /* 追加 */
@@ -734,6 +746,11 @@ video{
         background: url(../img/header_sp.png) no-repeat center center;
         background-size: 200vw;
     }
+    .fa-shopping-cart{
+        position: fixed; /* 追加 *//* 変更 */
+        top: 4.819%;
+        right: 13.375%;
+    }
     nav{
         width: 80%;
         height: 100vh;
@@ -756,13 +773,13 @@ video{
         font-size: 20px;
     }
     h1{
-        width: 13%;
-        margin: 4.819% 0 0 2.916%;
+        width: 50px;
+        /* margin: 4.819% 0 0 2.916%; */
     }
     header .menu-button{
         position: fixed;
-        top: 2%;
-        right: 1.875%;
+        /* top: 2%;
+        right: 1.875%; */
     }
     .scroll-area{
         width: 5.219%;

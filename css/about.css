@@ -135,28 +135,6 @@ i{
 
 
 
-/* common fixed
----------------------- */
-h1{
-    width: 5.052%;
-    margin: 5.858% 0 0 2.916%;
-    position: fixed;
-    z-index: 30;
-}
-h1 img{
-    width: 100%;
-}
-.menu{
-    width: 30px;
-    position: absolute;
-    left: 2.708%;
-    bottom: 2.78%;
-    z-index: 29;
-    position: fixed;
-}
-.menu img{
-    width: 100%;
-}
 
 /* common title
 ---------------------- */
@@ -439,10 +417,7 @@ h1 img{
         letter-spacing: 10px;
         margin: 20% auto 0 auto;
     }
-    h1{
-        width: 13%;
-        margin: 4.819% 0 0 2.916%;
-    }
+
     
     
     /* common title
