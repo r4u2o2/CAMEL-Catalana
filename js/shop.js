@@ -77,23 +77,7 @@ $(function(){
          $('#mainImage').css('background-image', subImage3Src);
      });
 
-    /**
-     * プルダウン
-     */
-     //アコーディオンをクリックした時の動作
-// $('.title').on('click', function() {//タイトル要素をクリックしたら
-//     $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
-      
-//     var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
-      
-//     if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-//       $(this).removeClass('close');//クラス名を除去    
-//     }else{//それ以外は
-//       $('.close').removeClass('close'); //クラス名closeを全て除去した後
-//       $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
-//       $(findElm).slideDown(500);//アコーディオンを開く
-//     }
-//   });
+
 
 
     //アコーディオンをクリックした時の動作
@@ -207,25 +191,35 @@ $(function(){
      */
     $('#cart').on('click', function(){
         var totalPrice = $('#previewPrice').text();
-        window.sessionStorage.setItem(['price'],[totalPrice]);
-        console.log(window.sessionStorage.getItem(['price']));
-    });
+        window.sessionStorage.setItem(['data'],[totalPrice]);
+        console.log(window.sessionStorage.getItem(['data']));
 
-    $('#cart2, #cart').on('click', function(){
+
+
         $('#cart2').load('cart.html');
-        /**
-         * モーダル
-         */
-         $('#cart2').addClass('overlay');
 
+        
+        $('#cart2').addClass('overlay');
 
-         // 6. #overlayを再度クリックした時、.fade-inを削除
-         $('#cart2').on('click', function(){
-             $(this).removeClass('overlay');
-            //  $(this).unload('cart.html');
-         });
-
+        $('#cart2').on('click', function(){
+                     $(this).removeClass('overlay');
+        });
     });
+
+    // $('#cart2, #cart').on('click', function(){
+    //     var cartData = $('#cart2').load('cart.html');
+    //     $('#cart2').addClass('overlay');
+
+    //     //  window.sessionStorage.setItem(['data'],[cartData]);
+    //     //  console.log(window.sessionStorage.getItem(['data']));
+
+    //      // 6. #overlayを再度クリックした時、.fade-inを削除
+    //      $('#cart2').on('click', function(){
+    //          $(this).removeClass('overlay');
+    //         //  $(this).unload('cart.html');
+    //      });
+
+    // });
 
 
 

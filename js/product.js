@@ -144,43 +144,21 @@ $(function(){
     }
     });
 
-    // // 1. 要素の位置を取得
-    // var workPosY02 = $('#productBlock > #textArea02').offset().top;
-    // console.log('workPosY02:' + workPosY02);
-    // var workPosY03 = $('#deliveryArea').offset().top;
-    // console.log('workPosY03:' + workPosY03);
-    // // 2. スクロール位置取得
-    // $(window).on('scroll', function(){
-    //     var dy = $(this).scrollTop();
-    //     // console.log('dy' + dy);
-    // // 3. 条件文
-    // // console.log($(window).height());
-    // // 4. 対象要素にクラスの付与
-    // if(workPosY02 - $(window).height() < dy)
-    // {
-    //     $('#productArea > #titleArea02').addClass('top-in'),
-    //     $('#moreArea02').addClass('left-in-more'),
-    //     $('#productBlock > #textArea02').addClass('left-in-text'),
-    //     $('#rightIn02').addClass('right-in-img'),
-    //     $('#manuLine02').css('opacity','1');
-    // }
-    // else
-    // {
-    //     $('#productArea > #titleArea02').removeClass('top-in'),
-    //     $('#moreArea02').removeClass('left-in-more'),
-    //     $('#productBlock > #textArea02').removeClass('left-in-text'),
-    //     $('#rightIn02').removeClass('right-in-img'),
-    //     $('#manuLine02').css('opacity','0');
-    // }
-    // if(workPosY03 - $(window).height() < dy)
-    // {
-    //     $('#productArea > #titleArea02').removeClass('top-in'),
-    //     $('#moreArea02').removeClass('left-in-more'),
-    //     $('#productBlock > #textArea02').removeClass('left-in-text'),
-    //     $('#rightIn02').removeClass('right-in-img'),
-    //     $('#manuLine02').css('opacity','0');
-    // }
-    // });
+    $('#cart2').on('click', function(){
+        $('#cart2').load('cart.html');
+        /**
+         * モーダル
+         */
+         $('#cart2').addClass('overlay');
+
+
+         // 6. #overlayを再度クリックした時、.fade-inを削除
+         $('#cart2').on('click', function(){
+             $(this).removeClass('overlay');
+            //  $(this).unload('cart.html');
+         });
+
+    });
 
 
 
