@@ -20,7 +20,7 @@ p{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1vw;
+    font-size: 10px;
     letter-spacing: 1.2px;
     color: #505253;
 }
@@ -33,10 +33,12 @@ i{
 }
 .main-area{
     width: 100vw;
-    height: 120vh;
-    padding: 24.336% 0 0 0;
+    height: 100vh;
+    padding: 0 0 0 0;
+    margin-top: 200px;
     background-color: #ffffff;
     position: relative;
+    overflow: hidden;
     /* アニメーション */
     animation-name: fade;
     animation-duration: 1s;
@@ -62,8 +64,9 @@ i{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.9vw;
+    font-size: 20px;
     letter-spacing: 2px;
+    line-height: 1.5;
     margin-bottom: 4.819%;
     color: #505253;
 }
@@ -71,13 +74,13 @@ i{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.3vw;
+    font-size: 13px;
     letter-spacing: 1.25px;
     line-height: 2;
 }
 .img-right{
     width: 48.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -86,7 +89,7 @@ i{
 }
 .deco-left{
     width: 48.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -96,7 +99,7 @@ i{
 }
 .img-left{
     width: 48.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -105,7 +108,7 @@ i{
 }
 .deco-right{
     width: 48.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -144,10 +147,10 @@ circle{
     right: 0;
 }
 .more-area h3{
-    font-size: 1.3vw;
+    font-size: 14px;
     position: absolute;
     top: 30%;
-    left: 46.534%;
+    left: 49.534%;
     color: #505253;
 }
 /* common fixed
@@ -168,6 +171,7 @@ h1 a img{
     right: 7.375%;
     font-size: 22px;
     z-index: 30;
+    display: none;
     transition-property: all;
     transition-duration: 0.6s;
     transition-delay: 0;
@@ -219,10 +223,10 @@ h1 a img{
 /* common title
 ---------------------- */
 .title-area{
-    width: 14%;
+    width: 176px;
     height: 40%;
     position: absolute;
-    top: 24%;
+    top: 0;
     left: 11.562%;
     z-index: 23;
     opacity: 1;
@@ -241,6 +245,7 @@ h1 a img{
     width: 100%;
 }
 .title-area h2{
+    font-size: 20px;
     line-height: 13px;
     margin: 7% 0 7% 30%;
 }
@@ -286,10 +291,10 @@ h1 a img{
 }
 @keyframes top-in{
     0%{
-        top: -40%;
+        top: -25%;
     }
     100%{
-        top: 24%;
+        top: 0;
     }
 }
 @keyframes left-in-more{
@@ -419,6 +424,7 @@ header .title-area{
     animation-fill-mode: forwards;
 }
 header .title-area h2{
+    font-size: 20px;
     line-height: 16px;
     letter-spacing: 3px;
     margin: 7% 0 4% 32%;
@@ -429,7 +435,7 @@ header .title-area span{
     margin: 7% 0 7% 12%;
 }
 header .title-area p{
-    font-size: 12px;
+    font-size: 10px;
     margin: 0 0 0 29%;
 }
 
@@ -580,7 +586,7 @@ main{
 .top{
     width: 100vw;
     height: 70vh;
-    padding: 20.336% 0 0 0;
+    /* padding: 20.336% 0 0 0; */
 }
 .top .main-block{
     display: flex;
@@ -588,7 +594,7 @@ main{
 }
 .top .deco-right{
     width: 10.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -598,7 +604,7 @@ main{
 }
 .top .deco-left{
     width: 10.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -640,14 +646,14 @@ video{
 } */
 .delivery .more-area{
     width: 20.578%;
-    height: 9.737%;
+    height: 61px;
     position: absolute;
     top: 80.27%;
     left: -33.184%;
-    font-size: 1.3vw;
+    font-size: 13px;
     color: #ffffff;
     text-align: center;
-    padding: 3% 0 3% 0;
+    padding: 25px 0 25px 0;
     /* margin: 0 auto; */
     background-color: #A19047;
 }
@@ -661,7 +667,7 @@ video{
 ---------------------- */
 .article .img-left{
     width: 48.157%;
-    height: 73%;
+    height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -791,10 +797,17 @@ video{
         position: fixed;
     }
     .main-area{
-        height: 190vh;
+        height: 130vh;
+        margin-top: 0;
+    }
+    #productBlock{
+        background-color: #ffffff;
+    }
+    #articleBlock{
+        background-color: #ffffff;
     }
     .main-block{
-        height: 85%;
+        height: 100%;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -803,33 +816,35 @@ video{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 33.453%;
+        top: 29.453%;
         /* left: 5.789%; */
     }
-    .text-area h3{
+    /* .text-area h3{
         font-size: 19px;
         letter-spacing: 2px;
         line-height: 1.5;
         margin-bottom: 8%;
-    }
-    .text-area p{
+    } */
+    /* .text-area p{
         font-size: 12px;
-    }
+    } */
     .img-right{
         width: 100%;
-        height: 62vh;
+        height: 50vh;
     }
     .deco-left{
         width: 100%;
-        height: 62vh;
+        height: 50vh;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
     }
     .img-left{
         width: 100%;
-        height: 62vh;
+        height: 50vh;
     }
     .deco-right{
         width: 100%;
-        height: 62vh;
+        height: 50vh;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
     }
         /* common title
     ---------------------- */
@@ -837,12 +852,12 @@ video{
         width: 170px;
         height: 30%;
         position: absolute;
-        top: 24%;
+        top: 0;
         left: 0;
     }
     .title-area .title-line{
         width: 1px;
-        height: 35.186%;
+        height: 170px;
         background-color: #505253;
         margin: 0 auto 0 auto;
     }
@@ -854,7 +869,7 @@ video{
         width: 100%;
     }
     .title-area h2{
-        font-size: 17px;
+        font-size: 18px;
         line-height: 13px;
         margin: 7% 0 4% 30%;
     }
@@ -885,14 +900,15 @@ video{
         margin: 0 auto 0 auto;
     }
     header .title-area h2{
+        font-size: 18px;
         line-height: 16px;
         letter-spacing: 3px;
         margin: 7% 0 4% 32%;
     }
     header .title-area span{
-        font-size: 12px;
+        font-size: 11px;
         letter-spacing: 1.5px;
-        margin: 7% auto 7% 5%;
+        margin: 7% auto 7% 7%;
     }
     header .title-area p{
         font-size: 10px;
@@ -905,7 +921,7 @@ video{
         height: 5.737%;
         position: absolute;
         top: 52.27%;
-        left: -33.184%;
+        left: -70%;
         position: relative;
     }
     svg{
@@ -936,40 +952,42 @@ video{
     }
     .delivery .more-area{
         width: 62.578%;
-        height: 4.737%;
+        height: 55px;
         position: absolute;
         top: 50.27%;
-        left: -33.184%;
+        left: -70%;
         font-size: 12px;
         color: #ffffff;
         text-align: center;
-        padding: 6% 0 0 0;
+        padding: 20px;
         background-color: #A19047;
     }
         /* top
     ---------------------- */
     .top{
         width: 100vw;
-        height: 70vh;
-        padding: 20.336% 0 0 0;
+        height: 60vh;
+        padding: 0 0 0 0;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
     .top .main-block{
         display: flex;
         align-items: center;
     }
     .top .deco-right{
-        width: 20.157%;
-        height: 30%;
+        width: 15%;
+        height: 25%;
         position: absolute;
-        top: 15%;
+        top: 0;
         right: 0;
         clip-path: polygon(0% 0%, 100% 0, 100% 100%, 20% 100%);
         background-color: #3A462E;
         z-index: 2;
     }
     .top .deco-left{
-        width: 20.157%;
-        height: 30%;
+        width: 15%;
+        height: 25%;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -991,7 +1009,7 @@ video{
         display: none;
     }
     .article{
-        height: 125vh;
+        height: 100vh;
     }
     .article .deco-right{
         display: none;
@@ -1004,14 +1022,14 @@ video{
         left: -33.184%;
         position: relative;
     }
-    .article .title-area .title-line{
+    /* .article .title-area .title-line{
         height: 52.186%;
-    }
+    } */
     .article-block{
         width: 80%;
         height: 45%;
         position: absolute;
-        top: 40.432%;
+        top: 37.432%;
         left: 0;
         right: 0;
         bottom: 0;

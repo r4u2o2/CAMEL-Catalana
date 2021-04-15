@@ -4,35 +4,36 @@
     </div>
     <div class="preview cart2">
         <div class="preview-img"></div>
-        <p class="preview-name" id="previewName">商品名</p>
+        <p class="preview-name" id="previewName2">商品名</p>
         <dl>
-            <dt>個数：</dt>
-            <dd id="previewNum"></dd>
+            <dt>個数:</dt>
+            <dd id="previewNum2"></dd>
         </dl>
         <dl>
-            <dt>お届け予定日：</dt>
-            <dd id="previewDate"></dd>
+            <dt>お届け予定日:</dt>
+            <dd id="previewDate2"></dd>
         </dl>
         <dl>
-            <dt>オプション：</dt>
-            <dd  id="previewOption"></dd>
+            <dt>オプション:</dt>
+            <dd  id="previewOption2"></dd>
         </dl>
         <dl>
-            <dt id="previewMessageTitle">メッセージ内容：</dt>
+            <dt id="previewMessageTitle">メッセージ内容:</dt>
             <dd id="previewMessage"></dd>
         </dl>
-        <p class="price">購入画面へすすむ</p>
+        <p class="cart">購入画面へすすむ</p>
         <p class="price01">合計（税込）</p>
-        <p id="previewPrice">0円</p>
+        <p class="preview-price" id="previewPrice2">0円</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="js/shop.js"></script> -->
     <script>
         $(function(){
-            $('#previewName').html(window.sessionStorage.getItem(['previewName']));
-            $('#previewNum').html(window.sessionStorage.getItem(['previewNum']));
-            $('#previewDate').html(window.sessionStorage.getItem(['previewDate']));
-            $('#previewOption').html(window.sessionStorage.getItem(['previewOption']));
+            $('#previewName2').html(window.sessionStorage.getItem(['previewName']));
+            $('#previewNum2').html(window.sessionStorage.getItem(['previewNum']));
+            $('#previewDate2').html(window.sessionStorage.getItem(['previewDate']));
+            $('#previewOption2').html(window.sessionStorage.getItem(['previewOption']));
+            $('#previewPrice2').html(window.sessionStorage.getItem(['totalPrice']) + '円');
         });
     </script>

@@ -24,6 +24,7 @@ h1 img{
     right: 7.375%;
     font-size: 22px;
     z-index: 30;
+    display: none;
 }
 .menu img{
     width: 100%;

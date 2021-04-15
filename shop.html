@@ -95,29 +95,6 @@
         </section>
         <section class="select-area" id="selectArea">
             <div class="select-block">
-                <div class="preview">
-                    <div class="preview-img"></div>
-                    <p class="preview-name" id="previewName">商品名</p>
-                    <dl>
-                        <dt>個数：</dt>
-                        <dd id="previewNum"></dd>
-                    </dl>
-                    <dl>
-                        <dt>お届け予定日：</dt>
-                        <dd id="previewDate"></dd>
-                    </dl>
-                    <dl>
-                        <dt>オプション：</dt>
-                        <dd  id="previewOption"></dd>
-                    </dl>
-                    <dl>
-                        <dt id="previewMessageTitle">メッセージ内容：</dt>
-                        <dd id="previewMessage"></dd>
-                    </dl>
-                    <p class="price">合計金額を表示</p>
-                    <p class="price01">合計（税込）</p>
-                    <p id="previewPrice">0円</p>
-                </div>
                 <div class="select-box">
                     <section class="select" id="selectButton00">
                         <p>商品<span>*</span></p>
@@ -153,8 +130,32 @@
                             <button id="button">確定</button>
                         </div>
                     </section>
-                    <p class="cart" id="cart">カートに入れる</p>
+                    <!-- <p class="cart" id="cart">カートに入れる</p> -->
                 </div>
+                <div class="preview">
+                    <div class="preview-img"></div>
+                    <p class="preview-name" id="previewName">商品名</p>
+                    <dl>
+                        <dt>個数:</dt>
+                        <dd id="previewNum"></dd>
+                    </dl>
+                    <dl>
+                        <dt>お届け予定日:</dt>
+                        <dd id="previewDate"></dd>
+                    </dl>
+                    <dl>
+                        <dt>オプション:</dt>
+                        <dd  id="previewOption"></dd>
+                    </dl>
+                    <dl>
+                        <dt id="previewMessageTitle">メッセージ内容:</dt>
+                        <dd id="previewMessage"></dd>
+                    </dl>
+                    <p class="cart" id="cart">カートに入れる</p>
+                    <p class="price01">合計（税込）</p>
+                    <p class="preview-price" id="previewPrice">0円</p>
+                </div>
+                
             </div>
             <div class="deco-right"></div>
         </section>
@@ -163,6 +164,7 @@
     <div id="overlay"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/calc.js"></script>
     <script src="js/shop.js"></script>
 </body>
 </html

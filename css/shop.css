@@ -279,6 +279,7 @@ main{
     top: 15.569%;
     right: 2.625%;
     z-index: 2;
+    transition-duration: 0.6s;
 }
 .deco-left{
     width: 48.157%;
@@ -322,7 +323,7 @@ main{
 }
 .preview{
     width: 49.621%;
-    height: 93.898%;
+    height: 90.898%;
     border-radius: 10px;
     background-color: #FFFFFF;
     z-index: 20;
@@ -358,61 +359,74 @@ dd{
     margin-bottom: 4.092%;
 }
 .price01{
+    font-size: 10px;
     position: absolute;
-    top: 85.773%;
-    right: 14.082%;
+    top: 88.773%;
+    right: 4%;
 }
-#previewPrice{
+.preview-price{
     font-size: 1.7vw;
     position: absolute;
     top: 90.773%;
     right: 5.082%;
 }
-.preview .price{
-    width: 30%;
-    height: 5%;
+.preview .cart{
+    width: 40%;
+    height: 41.7px;
     position: absolute;
-    top: 90.773%;
+    top: 88.773%;
     left: 4.664%;
     background-color: #A19047;
-    color: #ffffff;
     border-radius: 3px;
-    padding: 2.5%;
-    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
     font-size: 10px;
+    text-align: center;
+    padding: 15px;
     transition-duration: 0.6s;
 }
-.preview .price:hover{
+.preview .cart:hover{
     background-color: #ffffff;
     color: #A19047;
     border: 1px solid;
 }
 
+
+
 #overlay.overlay{
     width: 100vw;
     height: 100vh;
+    padding: 0 5.922% 0 5.922%;
     background-color: rgba(58, 70, 46, 0.80);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 50;
+    transition-duration: 0.6s;
 }
 .cart2{
-    width: 40%;
+    width: 400px;
     height: 80%;
-    top: 5%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 0 auto;
     z-index: 51;
+    transition-delay: 0.3s;
 }
 
 .cart-close{
-    width: 40px;
-    height: 40px;
-    top: 12%;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 10%;
+    right: 30%;
     z-index: 55;
 }
 .cart-close span{
-    width: 40px;
+    width: 30px;
     height: 2px;
     background-color: #BEB9B3;
     z-index: 55;
@@ -420,9 +434,15 @@ dd{
 }
 .cart-close span:nth-of-type(1){
     transform: translateY(12px) rotate(-45deg);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .cart-close span:nth-of-type(2){
     transform: translateY(12px) rotate(-135deg);
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .select-box{
@@ -527,7 +547,7 @@ button:hover{
 
 .calender{
     background-color: #ffffff;
-    padding: 5.5% 10% 10% 10%;
+    padding: 5.5% 10% 5% 10%;
     margin-bottom: 4.545%;
     border-radius: 10px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.30);
@@ -608,10 +628,6 @@ tbody{
         width: 100%;
         font-size: 19vw;
     }
-    h1{
-        width: 50px;
-    }
-    
     
     /* common title
     ---------------------- */
@@ -644,7 +660,8 @@ tbody{
         /* main-block
     ---------------------- */
     .main-area{
-        margin-bottom: 65%;
+        /* height: 120vh; */
+        margin-bottom: 45%;
     }
     .main-block h3{
         position: absolute;
@@ -654,13 +671,13 @@ tbody{
     }
     .main-block p{
         width: 90%;
-        font-size: 12px;
+        font-size: 10px;
         position: absolute;
         left: 5.208%;
-        bottom: -23.126%;
+        bottom: -17.126%;
     }
     .main-block span{
-        font-size: 10px;
+        font-size: 8px;
     }
     .img-block{
         display: none;
@@ -680,16 +697,17 @@ tbody{
     ---------------------- */
     .select-area{
         width: 100vw;
-        height: 100vh;
+        /* height: 130vh; */
+        height: unset;
         position: relative;
     }
     .select-block{
         width: 100%;
         height: 100%;
-        padding: 5.858% 5.922% 0 5.922%;
-        position: relative;
-        /* display: block; */
-        flex-direction: column-reverse;
+        padding: 5.858% 4.922% 0 4.922%;
+        /* position: relative; */
+        display: block;
+        /* flex-direction: column-reverse; */
         justify-content: space-between;
     }
     .deco-right{
@@ -704,9 +722,10 @@ tbody{
     }
     .preview{
         width: 100%;
-        height: 65%;
-        padding: 5% 3% 0 3%;
-        margin-bottom: 30px;
+        height: 490px;
+        padding: 5% 5% 0 5%;
+        margin: 0 auto;
+        position: relative;
         /* position: absolute;
         top: 65vh;
         left: 5.922%; */
@@ -731,9 +750,9 @@ tbody{
     }
     .price01{
         position: absolute;
-        top: 85.773%;
-        right: 14.082%;
-        font-size: 12px;
+        top: 86.773%;
+        right: 4%;
+        font-size: 10px;
     }
     #previewPrice{
         font-size: 19px;
@@ -741,14 +760,31 @@ tbody{
         top: 90.773%;
         right: 5.082%;
     }
-    .preview .price{
+    .preview .cart{
         width: 40%;
-        height: 7%;
+        /* height: ; */
         position: absolute;
-        top: 88.773%;
+        top: 85.773%;
         left: 4.664%;
         font-size: 10px;
-        padding: 2.5%;
+
+    }
+    .cart2{
+        width: 330px;
+        height: 60%;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        z-index: 51;
+        transition-delay: 0.3s;
+    }
+    .cart-close{
+        position: absolute;
+        top: 16%;
+        right: 5%;
     }
     /* #cart2.overlay{
         width: 100vw;

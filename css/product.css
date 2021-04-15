@@ -64,13 +64,14 @@ i{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.6vw;
+    font-size: 20px;
+    line-height: 1.5;
     letter-spacing: 2px;
     margin-bottom: 7.819%;
     color: #505253;
 }
 .text-area span{
-    font-size: 2.5vw;
+    font-size: 26px;
     opacity: 0.6;
     border-bottom: solid 3px #A19047;
     color: #505253;
@@ -79,7 +80,7 @@ i{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.1vw;
+    font-size: 13px;
     letter-spacing: 1.25px;
     line-height: 2.5;
 }
@@ -146,7 +147,7 @@ i{
 /* common title
 ---------------------- */
 .title-area{
-    width: 22%;
+    width: 176px;
     height: 46%;
     position: absolute;
     /* top: -46%; */
@@ -162,7 +163,7 @@ i{
     margin: 0 auto 0 auto;
 }
 .title-area figure{
-    width: 50.484%;
+    width: 63.484%;
     margin: 8% auto 0 25.181%;
 }
 .title-area figure img{
@@ -398,15 +399,15 @@ i{
 }
 #howtoArea .more-area{
     width: 20.578%;
-    height: 9.737%;
+    height: 61px;
     position: absolute;
     top: 80.27%;
     left: 100%;
     /* left: 45.184%; */
-    font-size: 1.3vw;
+    font-size: 13px;
     color: #ffffff;
     text-align: center;
-    padding: 3% 0 3% 0;
+    padding: 25px 0 25px 0;
     /* margin: 0 auto; */
     background-color: #A19047;
     z-index: 25;
