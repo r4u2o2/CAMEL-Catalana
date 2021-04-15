@@ -52,45 +52,6 @@ main{
 }
 
 
-
-
-
-/* common title
----------------------- */
-.title-area{
-    width: 22%;
-    height: 46%;
-    position: absolute;
-    top: 0;
-    left: 5.937%;
-    z-index: 23;
-    opacity: 1;
-}
-.title-area .title-line{
-    width: 1px;
-    height: 54.186%;
-    background-color: #505253;
-    margin: 0 auto 0 auto;
-}
-.title-area figure{
-    width: 50.484%;
-    margin: 8% auto 0 25.181%;
-}
-.title-area figure img{
-    width: 100%;
-}
-.title-text{
-    position: absolute;
-    top: 27.354%;
-    left: 13.854%;
-    z-index: 23;
-}
-.title-text h3{
-    font-size: 1.4vw;
-}
-.title-text p{
-    font-size: 1vw;
-}
 .main-area h2{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;

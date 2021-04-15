@@ -156,7 +156,7 @@ circle{
 /* common fixed
 ---------------------- */
 h1{
-    width: 5.052%;
+    width: 45px;
     position: fixed;
     top: 4.819%;
     left: 2.916%;
@@ -227,7 +227,7 @@ h1 a img{
     height: 40%;
     position: absolute;
     top: 0;
-    left: 11.562%;
+    left: 8.562%;
     z-index: 23;
     opacity: 1;
 }
@@ -250,6 +250,7 @@ h1 a img{
     margin: 7% 0 7% 30%;
 }
 .title-area p{
+    font-size: 10px;
     margin: 0 0 0 30%;
 }
 
@@ -490,7 +491,7 @@ header .menu-button.active span:nth-of-type(3){
     transform: translateY(12px) rotate(-135deg);
 }
 nav{
-    width: 18.958%;
+    width: 300px;
     height: 100vh;
     background-color: #ffffff;
     padding: 4.819% 0 4.819% 1.875%;
@@ -519,6 +520,7 @@ header nav.active{
     pointer-events: auto; /* 追加 */
 }
 .nav-list{
+    font-size: 22px;
     line-height: 15px;
     position: absolute;
     left: 9.89%;
@@ -528,7 +530,7 @@ header nav.active{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1vw;
+    font-size: 10px;
     letter-spacing: 1.2px;
     color: #505253;
 }
@@ -779,7 +781,7 @@ video{
         font-size: 20px;
     }
     h1{
-        width: 50px;
+        width: 40px;
         /* margin: 4.819% 0 0 2.916%; */
     }
     header .menu-button{

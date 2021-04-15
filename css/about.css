@@ -57,7 +57,7 @@ i{
     width: 35.078%;
     height: 36.184%;
     position: absolute;
-    top: 50.453%;
+    top: 43.453%;
     left: 15.789%;
 }
 .text-area h3{
@@ -134,47 +134,6 @@ i{
     z-index: 1;
 }
 
-
-
-
-/* common title
----------------------- */
-.title-area{
-    width: 176px;
-    height: 46%;
-    position: absolute;
-    top: -46%;
-    /* top: 0; */
-    left: 5.937%;
-    z-index: 23;
-    opacity: 1;
-    /* animation-delay: 1s; */
-}
-.title-area .title-line{
-    width: 1px;
-    height: 54.186%;
-    background-color: #505253;
-    margin: 0 auto 0 auto;
-}
-.title-area figure{
-    width: 63.484%;
-    margin: 8% auto 0 25.181%;
-}
-.title-area figure img{
-    width: 100%;
-}
-.title-text{
-    position: absolute;
-    top: -8%;
-    left: 13.854%;
-    z-index: 23;
-}
-.title-text h2{
-    font-size: 1.4vw;
-}
-.title-text p{
-    font-size: 1vw;
-}
 .main-area h2{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
@@ -201,7 +160,7 @@ i{
         top: -8%;
     }
     100%{
-        top: 27.354%;
+        top: 26.854%;
     }
 }
 @keyframes left-in-text{
@@ -363,9 +322,9 @@ i{
 }
 .reason .title-text{
     position: absolute;
-    top: 27.354%;
-    left: 80%;
-    /* right: 8.854%; */
+    top: 26.354%;
+    left: auto;
+    right: 4.854%;
     z-index: 23;
 }
 .reason .text-area{
@@ -398,7 +357,7 @@ i{
     font-size: 13px;
     color: #ffffff;
     text-align: center;
-    padding: 25px 0 25px 0;
+    padding: 23px 0 23px 0;
     /* margin: 0 auto; */
     background-color: #A19047;
     z-index: 35;
@@ -420,41 +379,10 @@ i{
     }
 
     
-    
-    /* common title
-    ---------------------- */
-    .title-area{
-        width: 170px;
-        height: 52%;
-        position: absolute;
-        top: 0;
-        left: 2%;
-    }
-    .title-area .title-line{
-        width: 1px;
-        height: 50.186%;
-        background-color: #505253;
-        margin: 0 auto 0 auto;
-    }
-    .title-area figure{
-        width: 65.484%;
-        margin: 5% 0 0 18.181%;
-    }
-    .title-text{
-        position: absolute;
-        top: 27.354%;
-        left: 13.854%;
-    }
-    .title-text h2{
-        font-size: 17px;
-    }
-    .title-text p{
-        font-size: 10px;
-    }
-    
 
     .main-area{
-        height: 160vh;
+        height: 130vh;
+        margin-bottom: 0;
     }
     .main-block{
         height: 85%;
@@ -462,11 +390,14 @@ i{
         left: 0;
         bottom: 0;
     }
+    #reasonArea{
+        background-color: #ffffff;
+    }
     .text-area{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 24.453%;
+        top: 23.453%;
         /* left: 5.789%; */
     }
     .text-area h3{
@@ -495,43 +426,52 @@ i{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 24.453%;
+        top: 23.453%;
         left: auto;
         right: 15.789%;
     }
     .img-right{
         width: 100%;
-        height: 55vh;
+        height: 45vh;
     }
     .deco-left{
         width: 100%;
-        height: 55vh;
+        height: 45vh;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
     }
     .img-left{
         width: 100%;
-        height: 55vh;
+        height: 45vh;
     }
     .deco-right{
         width: 100%;
-        height: 55vh;
+        height: 45vh;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .package {
+        height: 135vh;
+    }
+    .package .text-area{
+        position: absolute;
+        top: 20.453%;
     }
     .package .more-area{
         width: 62.578%;
-        height: 4.737%;
+        height: 55px;
         position: absolute;
-        top: 51.87%;
+        top: 50.87%;
         right: 0;
         font-size: 12px;
         color: #ffffff;
         text-align: center;
-        padding: 5%;
+        padding: 20px 0 20px;
         background-color: #A19047;
     }
     .package .img-right{
-        height: 55vh;
+        height: 45vh;
     }
     .package .deco-right{
-        height: 55vh;
+        height: 45vh;
     }
 
 }

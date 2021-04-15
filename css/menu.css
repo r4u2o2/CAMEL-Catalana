@@ -1,5 +1,5 @@
 h1{
-    width: 5.052%;
+    width: 45px;
     /* margin: 4.819% 0 0 2.916%; */
     position: fixed;
     top: 4.819%;
@@ -9,6 +9,8 @@ h1{
 h1 img{
     width: 100%;
 }
+
+
 .menu{
     width: 30px;
     position: absolute;
@@ -29,6 +31,42 @@ h1 img{
 .menu img{
     width: 100%;
 }
+
+
+/* common title
+---------------------- */
+.title-area{
+    width: 176px;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 8.562%;
+    z-index: 23;
+    opacity: 1;
+}
+.title-area .title-line{
+    width: 1px;
+    height: 58.186%;
+    background-color: #505253;
+    margin: 0 auto 0 auto;
+}
+.title-area figure{
+    width: 63.484%;
+    margin: -18% 0 0 18.181%;
+}
+.title-area figure img{
+    width: 100%;
+}
+.title-area h2{
+    font-size: 20px;
+    line-height: 13px;
+    margin: 7% 0 7% 30%;
+}
+.title-area p{
+    font-size: 10px;
+    margin: 0 0 0 30%;
+}
+
 
 /* header nav
 ---------------------- */
@@ -80,7 +118,7 @@ header .menu-button.active span:nth-of-type(3){
     transform: translateY(12px) rotate(-135deg);
 }
 nav{
-    width: 18.958%;
+    width: 300px;
     height: 100vh;
     background-color: #ffffff;
     padding: 4.819% 0 4.819% 1.875%;
@@ -111,6 +149,7 @@ header nav.active{
 }
 
 .nav-list{
+    font-size: 22px;
     line-height: 15px;
     position: absolute;
     left: 9.89%;
@@ -120,7 +159,7 @@ header nav.active{
     font-family: a-otf-gothic-bbb-pr6n, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1vw;
+    font-size: 10px;
     letter-spacing: 1.2px;
     color: #505253;
 }
@@ -198,6 +237,39 @@ nav p{
     .bottom-block i{
         font-size: 20px;
     }
+
+        /* common title
+    ---------------------- */
+    .title-area{
+        width: 170px;
+        height: 30%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .title-area .title-line{
+        width: 1px;
+        height: 170px;
+        background-color: #505253;
+        margin: 0 auto 0 auto;
+    }
+    .title-area figure{
+        width: 63.484%;
+        margin: -18% 0 0 18.181%;
+    }
+    .title-area figure img{
+        width: 100%;
+    }
+    .title-area h2{
+        font-size: 18px;
+        line-height: 13px;
+        margin: 7% 0 4% 30%;
+    }
+    .title-area p{
+        font-size: 8px;
+        margin: 0 0 0 30%;
+    }
+
 }
 @media(min-width:1200px){
     .nav-list span{
