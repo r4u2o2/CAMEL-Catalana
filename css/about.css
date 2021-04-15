@@ -381,7 +381,7 @@ i{
     
 
     .main-area{
-        height: 130vh;
+        height: 120vh;
         margin-bottom: 0;
     }
     .main-block{
@@ -397,7 +397,7 @@ i{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 23.453%;
+        top: 19.453%;
         /* left: 5.789%; */
     }
     .text-area h3{
@@ -426,7 +426,7 @@ i{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 23.453%;
+        top: 20.453%;
         left: auto;
         right: 15.789%;
     }
@@ -449,17 +449,17 @@ i{
         clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
     }
     .package {
-        height: 135vh;
+        height: 130vh;
     }
     .package .text-area{
         position: absolute;
-        top: 20.453%;
+        top: 16.453%;
     }
     .package .more-area{
         width: 62.578%;
         height: 55px;
         position: absolute;
-        top: 50.87%;
+        top: 48.87%;
         right: 0;
         font-size: 12px;
         color: #ffffff;

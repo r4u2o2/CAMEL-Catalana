@@ -209,7 +209,7 @@ nav p{
 
 @media(max-width: 750px){
     h1{
-        width: 50px;
+        width: 40px;
     }
     .fa-shopping-cart{
         position: fixed; /* 追加 *//* 変更 */
@@ -225,7 +225,7 @@ nav p{
         right: -100%;
     }
     .nav-list li{
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 40px;
     }
     .nav-list span{

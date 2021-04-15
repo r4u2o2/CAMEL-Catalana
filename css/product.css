@@ -385,6 +385,7 @@ i{
     /* margin: 0 auto; */
     background-color: #A19047;
     z-index: 25;
+    transition-duration: 0.6s;
 }
 #howtoArea .more-area:hover{
     background-color: unset;
@@ -412,7 +413,7 @@ i{
     }
 
     .main-area{
-        height: 130vh;
+        height: 120vh;
         margin-bottom: 0;
     }
     .main-block{
@@ -425,7 +426,7 @@ i{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 22.453%;
+        top: 19.453%;
         left: auto;
     }
     .text-area h3{
@@ -461,7 +462,7 @@ i{
         width: 70%;
         height: 80vh;
         position: absolute;
-        top: 22.453%;
+        top: 19.453%;
         left: auto;
         right: 15.789%;
     }
@@ -483,9 +484,7 @@ i{
         height: 50vh;
         clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
     }
-    #howtoArea{
-        height: 135vh;
-    }
+    
         /* common title
     ---------------------- */
     #howtoArea .title-area{
@@ -517,15 +516,17 @@ i{
         font-size: 8px;
         margin: 0 0 0 26%;
     }
-
+    #howtoArea{
+        height: 130vh;
+    }
     #howtoArea .text-area{
-        top: 20.453%;
+        top: 18.453%;
     }
     #howtoArea .more-area{
         width: 62.578%;
         height: 55px;
         position: absolute;
-        top: 55.27%;
+        top: 53.27%;
         right: 0;
         font-size: 12px;
         color: #ffffff;
