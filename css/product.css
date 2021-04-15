@@ -143,15 +143,6 @@ i{
 
 
 
-.main-area h2{
-    font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2vw;
-    letter-spacing: 3px;
-    color: #505253;
-    margin-bottom: 10px;
-}
 
 
 /* animation
@@ -342,20 +333,40 @@ i{
 
 /* howtoArea
 ---------------------- */
-.right-area .title-text2{
+#howtoArea .title-area{
+    width: 255px;
+    height: 40%;
     position: absolute;
-    top: 26.854%;
-    left: 81%;
-    /* right: 9.854%; */
+    /* top: -46%; */
+    top: 0;
+    left: auto;
+    right: 4.937%;
     z-index: 23;
+    opacity: 1;
 }
-.title-text2 h2{
+#howtoArea .title-area .title-line{
+    width: 1px;
+    height: 58.186%;
+    background-color: #505253;
+    margin: 0 auto 0 40%;
+}
+#howtoArea .title-area figure{
+    width: 45.984%;
+    margin: -12% 0 0 18.181%;
+}
+#howtoArea .title-area figure img{
+    width: 100%;
+}
+#howtoArea .title-area h2{
     font-size: 20px;
     line-height: 13px;
+    margin: 5% 0 4% 25%;
 }
-.title-text2 p{
+#howtoArea .title-area p{
     font-size: 10px;
+    margin: 0 0 0 25%;
 }
+
 #howtoArea .img-left{
     background: url(../img/howto.jpg) no-repeat center center;
     background-size: cover;
@@ -475,8 +486,40 @@ i{
     #howtoArea{
         height: 135vh;
     }
+        /* common title
+    ---------------------- */
+    #howtoArea .title-area{
+        width: 240px;
+        height: 30%;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+    #howtoArea .title-area .title-line{
+        width: 1px;
+        height: 170px;
+        background-color: #505253;
+        margin: 0 auto 0 40%;
+    }
+    #howtoArea .title-area figure{
+        width: 44.984%;
+        margin: -14% 0 0 18.181%;
+    }
+    #howtoArea .title-area figure img{
+        width: 100%;
+    }
+    #howtoArea .title-area h2{
+        font-size: 18px;
+        line-height: 13px;
+        margin: 5% 0 4% 26%;
+    }
+    #howtoArea .title-area p{
+        font-size: 8px;
+        margin: 0 0 0 26%;
+    }
+
     #howtoArea .text-area{
-        top: 22.453%;
+        top: 20.453%;
     }
     #howtoArea .more-area{
         width: 62.578%;

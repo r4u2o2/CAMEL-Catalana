@@ -51,16 +51,40 @@ main{
     position: relative;
 }
 
-
-.main-area h2{
-    font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2vw;
-    letter-spacing: 3px;
-    color: #505253;
-    margin-bottom: 10px;
+/* common title
+---------------------- */
+.shoptitle-area{
+    width: 255px;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 8.562%;
+    z-index: 23;
+    opacity: 1;
 }
+.shoptitle-area .title-line{
+    width: 1px;
+    height: 58.186%;
+    background-color: #505253;
+    margin: 0 auto 0 40%;
+}
+.shoptitle-area figure{
+    width: 45.984%;
+    margin: -12% 0 0 18.181%;
+}
+.shoptitle-area figure img{
+    width: 100%;
+}
+.shoptitle-area h2{
+    font-size: 20px;
+    line-height: 13px;
+    margin: 5% 0 4% 25%;
+}
+.shoptitle-area p{
+    font-size: 10px;
+    margin: 0 0 0 25%;
+}
+
 
 
 /* animation
@@ -590,32 +614,36 @@ tbody{
         font-size: 19vw;
     }
     
-    /* common title
+        /* common title
     ---------------------- */
-    .title-area{
-        width: 170px;
-        height: 52%;
+    .shoptitle-area{
+        width: 240px;
+        height: 30%;
         position: absolute;
         top: 0;
-        left: 2%;
+        left: -23px;
     }
-    .title-area .title-line{
+    .shoptitle-area .title-line{
         width: 1px;
-        height: 50.186%;
+        height: 170px;
         background-color: #505253;
-        margin: 0 auto 0 auto;
+        margin: 0 auto 0 40%;
     }
-    .title-area figure{
-        width: 65.484%;
-        margin: 5% 0 0 18.181%;
+    .shoptitle-area figure{
+        width: 44.984%;
+        margin: -14% 0 0 18.181%;
     }
-    .title-text{
-        position: absolute;
-        top: 27.354%;
-        left: 13.854%;
+    .shoptitle-area figure img{
+        width: 100%;
     }
-    .title-text h2{
-        font-size: 17px;
+    .shoptitle-area h2{
+        font-size: 18px;
+        line-height: 13px;
+        margin: 5% 0 4% 26%;
+    }
+    .shoptitle-area p{
+        font-size: 8px;
+        margin: 0 0 0 26%;
     }
 
         /* main-block
