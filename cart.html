@@ -31,7 +31,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function(){
-            $('#previewName2').html(window.sessionStorage.getItem(['previewName']));
+            $('#previewName2').html();
+            console.log($('#previewName2'));
             $('#previewNum2').html(window.sessionStorage.getItem(['previewNum']));
             $('#previewDate2').html(window.sessionStorage.getItem(['previewDate']));
             $('#previewOption2').html(window.sessionStorage.getItem(['previewOption']));

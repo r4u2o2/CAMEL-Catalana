@@ -337,6 +337,9 @@ $(function(){
             $('#calender > p').html(e.target.dataset.date);
             // console.log($('#calender > p').text());
             // console.log(e.target.dataset.date);
+
+
+
         var previewName = $('#previewName').text();
         var previewNum = $('#previewNum').text();
         calcPrice(previewName, previewNum);
@@ -345,11 +348,24 @@ $(function(){
     
     showCalendar(year, month)
 
-    $('#previewName').html(window.sessionStorage.getItem(['previewName']));
+    var getItemName = window.sessionStorage.getItem(['previewName']);
+
+    if(getItemName)
+    {
+        $('#previewName').html(getItemName);
+    }
+    
     $('#previewNum').html(window.sessionStorage.getItem(['previewNum']));
     $('#previewDate').html(window.sessionStorage.getItem(['previewDate']));
     $('#previewOption').html(window.sessionStorage.getItem(['previewOption']));
-    $('#previewPrice').html(window.sessionStorage.getItem(['totalPrice']) + '円');
+
+    var getItemPrice = window.sessionStorage.getItem(['totalPrice']);
+
+    if(getItemPrice)
+    {
+        $('#previewPrice').html(getItemPrice + '円');
+    }
+    // $('#previewPrice').html(window.sessionStorage.getItem(['totalPrice']) + '円');
 
 });
 

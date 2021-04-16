@@ -3,7 +3,7 @@ $(function(){
      * ハンバーガーメニュー
      */
      $('#manuButton').on('click', function(){
-        console.log('menuクリック');
+        // console.log('menuクリック');
         $('#manuButton').toggleClass('active');
         $('#nav').toggleClass('active');
    });
@@ -144,21 +144,21 @@ $(function(){
     }
     });
 
-    $('#cart2').on('click', function(){
-        $('#cart2').load('cart.html');
-        /**
-         * モーダル
-         */
-         $('#cart2').addClass('overlay');
+    // $('#cart2').on('click', function(){
+    //     $('#cart2').load('cart.html');
+    //     /**
+    //      * モーダル
+    //      */
+    //      $('#cart2').addClass('overlay');
 
 
-         // 6. #overlayを再度クリックした時、.fade-inを削除
-         $('#cart2').on('click', function(){
-             $(this).removeClass('overlay');
-            //  $(this).unload('cart.html');
-         });
+    //      // 6. #overlayを再度クリックした時、.fade-inを削除
+    //      $('#cart2').on('click', function(){
+    //          $(this).removeClass('overlay');
+    //         //  $(this).unload('cart.html');
+    //      });
 
-    });
+    // });
 
 
 
