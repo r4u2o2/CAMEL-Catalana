@@ -214,15 +214,6 @@ $(function(){
         });
     });
 
-    $('#cart2').on('click', function(){
-        $('#overlay').load('cart.html');
-        $('#overlay').addClass('overlay');
-
-        $('#overlay').on('click', function(){
-            window.location.reload();
-        });
-    });
-
 
     // $('#cart2, #cart').on('click', function(){
     //     var cartData = $('#cart2').load('cart.html');
@@ -346,11 +337,11 @@ $(function(){
             $('#calender > p').html(e.target.dataset.date);
             // console.log($('#calender > p').text());
             // console.log(e.target.dataset.date);
-            var previewName = $('#previewName').text();
+        var previewName = $('#previewName').text();
         var previewNum = $('#previewNum').text();
         calcPrice(previewName, previewNum);
         }
-    })
+    });
     
     showCalendar(year, month)
 
@@ -359,5 +350,6 @@ $(function(){
     $('#previewDate').html(window.sessionStorage.getItem(['previewDate']));
     $('#previewOption').html(window.sessionStorage.getItem(['previewOption']));
     $('#previewPrice').html(window.sessionStorage.getItem(['totalPrice']) + '円');
+
 });
 

@@ -13,6 +13,7 @@ function calcPrice(previewName, previewNum){
     {
         previewNum = 0;
     }
+   
     // console.log(productObj[]);
 
     // console.log('Num1:' + productNum[0]);
@@ -27,7 +28,9 @@ function calcPrice(previewName, previewNum){
     var price = productObj[previewName];
         var num = previewNum;
         // console.log('個数' + num);
+        
         var totalPrice = 0;
+
 
     if($('#previewOption').text() === 'メッセージプレート(+100円)')
     {
@@ -37,6 +40,7 @@ function calcPrice(previewName, previewNum){
     {
         totalPrice = price*num;
     }
+    
     $('#previewPrice').text(totalPrice + '円');
     
     window.sessionStorage.setItem(['previewName'],[previewName]);
