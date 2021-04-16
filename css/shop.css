@@ -340,17 +340,18 @@ dd{
     margin-bottom: 2.092%;
 }
 .preview-name{
-    font-size: 1.7vw;
+    font-size: 16px;
     margin-bottom: 4.092%;
 }
+
 .price01{
     font-size: 10px;
     position: absolute;
-    top: 88.773%;
+    top: 87.773%;
     right: 4%;
 }
 .preview-price{
-    font-size: 1.7vw;
+    font-size: 18px;
     position: absolute;
     top: 90.773%;
     right: 5.082%;
@@ -381,7 +382,7 @@ dd{
 #overlay.overlay{
     width: 100vw;
     height: 100vh;
-    padding: 0 5.922% 0 5.922%;
+    /* padding: 0 5.922% 0 5.922%; */
     background-color: rgba(58, 70, 46, 0.80);
     position: fixed;
     top: 0;
@@ -389,25 +390,39 @@ dd{
     z-index: 50;
     transition-duration: 0.6s;
 }
+.container{
+    width: 400px;
+    height: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .cart2{
     width: 400px;
-    height: 80%;
+    height: 90%;
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 0;
     right: 0;
     bottom: 0;
     margin: 0 auto;
     z-index: 51;
+    padding: 5% 5% 0 5%;
     transition-delay: 0.3s;
 }
-
+#previewPrice2{
+    font-size: 18px;
+    margin-bottom: 4.092%;
+}
 .cart-close{
     width: 30px;
     height: 25px;
     position: absolute;
-    top: 10%;
-    right: 30%;
+    top: 0;
+    right: 0;
     z-index: 55;
 }
 .cart-close span{
@@ -739,7 +754,7 @@ tbody{
     }
     .price01{
         position: absolute;
-        top: 86.773%;
+        top: 87.773%;
         right: 4%;
         font-size: 10px;
     }
@@ -758,48 +773,38 @@ tbody{
         font-size: 10px;
 
     }
-    .cart2{
+    .container{
         width: 330px;
-        height: 60%;
+        height: 65%;
+        margin: 0 auto;
         position: absolute;
         top: 20%;
         left: 0;
         right: 0;
         bottom: 0;
-        margin: 0 auto;
+    }
+    .cart2{
+        width: 330px;
+        height: 85%;
+        position: absolute;
+        top: 7%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        /* margin: 0 auto; */
         z-index: 51;
         transition-delay: 0.3s;
     }
+    #previewPrice2{
+        font-size: 16px;
+        margin-bottom: 4.092%;
+    }
     .cart-close{
         position: absolute;
-        top: 16%;
-        right: 5%;
-    }
-    /* #cart2.overlay{
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(58, 70, 46, 0.80);
-        position: fixed;
         top: 0;
-        left: 0;
-        z-index: 25;
+        right: 0;
     }
-    .cart2{
-        width: 85%;
-        height: 70%;
-        top: 15%;
-        margin: 0 auto;
-        z-index: 26;
-    } */
 
-    .select-block{
-        z-index: 28;
-    }
-    
-    .select-box{
-        width: 100%;
-        /* z-index: 28; */
-    }
     .select-box .select{
         width: 100%;
         padding: 5%;

@@ -361,6 +361,7 @@ i{
     /* margin: 0 auto; */
     background-color: #A19047;
     z-index: 35;
+    transition-duration: 0.6s;
 }
 .package .more-area:hover{
     background-color: unset;

@@ -166,12 +166,13 @@ h1 a img{
     width: 100%;
 }
 .fa-shopping-cart{
-    position: fixed; /* 追加 *//* 変更 */
-    top: 4.819%;
-    right: 7.375%;
+    position: absolute; /* 追加 *//* 変更 */
+    top: 5.319%;
+    right: 80px;
     font-size: 22px;
+    opacity: 0.7;
     z-index: 30;
-    display: none;
+    /* display: none; */
     transition-property: all;
     transition-duration: 0.6s;
     transition-delay: 0;
@@ -658,6 +659,7 @@ video{
     padding: 25px 0 25px 0;
     /* margin: 0 auto; */
     background-color: #A19047;
+    transition-duration: 0.6s;
 }
 .delivery .more-area:hover{
     background-color: unset;
@@ -755,9 +757,9 @@ video{
         background-size: 200vw;
     }
     .fa-shopping-cart{
-        position: fixed; /* 追加 *//* 変更 */
-        top: 4.819%;
-        right: 13.375%;
+        position: absolute;
+        top: 5.019%;
+        right: 60px;
     }
     nav{
         width: 80%;

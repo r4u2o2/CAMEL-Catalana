@@ -354,7 +354,6 @@ $(function(){
     
     showCalendar(year, month)
 
-
     $('#previewName').html(window.sessionStorage.getItem(['previewName']));
     $('#previewNum').html(window.sessionStorage.getItem(['previewNum']));
     $('#previewDate').html(window.sessionStorage.getItem(['previewDate']));
