@@ -842,6 +842,9 @@ tbody{
     .option{
         font-size: 12px;
     }
+    button{
+        font-size: 8px;
+    }
 
 }
 
