@@ -131,7 +131,7 @@ $(function(){
         // console.log('商品名' + $(this).text());
     });
    
-    $('#selectNum > option').on('click', function(){
+    $('#selectNum > p').on('click', function(){
         // console.log('個数クリック');
         var productNum = $(this).text();
         $('#previewNum').text(productNum);

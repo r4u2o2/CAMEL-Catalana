@@ -496,15 +496,14 @@ dd{
     color: #ffffff;
     background-color: #BEB9B3;
 }
-
-option{
+.option{
     font-size: 1.1vw;
     color: #707070;
     cursor: pointer;
     /* margin-bottom: 5%; */
     margin: 5%;
 }
-option:hover{
+.option:hover{
     color: #ffffff;
     background-color: #BEB9B3;
 }
@@ -840,7 +839,7 @@ tbody{
         font-size: 12px;
         margin: 5%;
     }
-    option{
+    .option{
         font-size: 12px;
     }
 
