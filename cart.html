@@ -36,6 +36,11 @@
             $('#previewNum2').html(window.sessionStorage.getItem(['previewNum']));
             $('#previewDate2').html(window.sessionStorage.getItem(['previewDate']));
             $('#previewOption2').html(window.sessionStorage.getItem(['previewOption']));
-            $('#previewPrice2').html(window.sessionStorage.getItem(['totalPrice']) + '円');
+            var getItemPrice = window.sessionStorage.getItem(['totalPrice']);
+            if(getItemPrice)
+            {
+            $('#previewPrice2').html(getItemPrice + '円');
+            }
+            // $('#previewPrice2').html(window.sessionStorage.getItem(['totalPrice']) + '円');
         });
     </script>
