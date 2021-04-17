@@ -927,7 +927,7 @@ video{
         position: absolute;
         top: 52.27%;
         left: -70%;
-        position: relative;
+        /* position: relative; */
     }
     svg{
         position: absolute;
