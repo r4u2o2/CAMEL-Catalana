@@ -231,6 +231,7 @@ main{
     height: 100%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
     transition-duration: 0.6s;
+    cursor: pointer;
 }
 .img-block .img:hover{
     margin-top: -2%;
@@ -370,6 +371,7 @@ dd{
     text-align: center;
     padding: 15px;
     transition-duration: 0.6s;
+    cursor: pointer;
 }
 .preview .cart:hover{
     background-color: #ffffff;
@@ -469,6 +471,7 @@ dd{
 .select-box p{
     font-size: 1.1vw;
     color: #707070;
+    cursor: pointer;
     /* margin-bottom: 5%; */
 }
 /*アコーディオンで現れるエリア*/
@@ -497,6 +500,7 @@ dd{
 option{
     font-size: 1.1vw;
     color: #707070;
+    cursor: pointer;
     /* margin-bottom: 5%; */
     margin: 5%;
 }
@@ -599,6 +603,7 @@ tbody{
     border-style: solid;
     padding: 4% 0 4% 0;
     text-align: center;
+    cursor: pointer;
 }
 /* .is-disabled:hover{
     background: none;
