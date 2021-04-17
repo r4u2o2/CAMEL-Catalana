@@ -413,7 +413,7 @@ i{
     }
 
     .main-area{
-        height: 120vh;
+        height: 128vh;
         margin-bottom: 0;
     }
     .main-block{
@@ -517,7 +517,7 @@ i{
         margin: 0 0 0 26%;
     }
     #howtoArea{
-        height: 130vh;
+        height: 135vh;
     }
     #howtoArea .text-area{
         top: 18.453%;
@@ -526,7 +526,7 @@ i{
         width: 62.578%;
         height: 55px;
         position: absolute;
-        top: 53.27%;
+        top: 54.27%;
         right: 0;
         font-size: 12px;
         color: #ffffff;

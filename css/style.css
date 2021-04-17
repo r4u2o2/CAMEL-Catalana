@@ -802,7 +802,7 @@ video{
         position: fixed;
     }
     .main-area{
-        height: 130vh;
+        height: 133vh;
         margin-top: 0;
     }
     #productBlock{
@@ -879,7 +879,7 @@ video{
         margin: 7% 0 4% 30%;
     }
     .title-area p{
-        font-size: 8px;
+        font-size: 9px;
         margin: 0 0 0 30%;
     }
     header .title-area{
@@ -925,7 +925,7 @@ video{
         width: 62.578%;
         height: 5.737%;
         position: absolute;
-        top: 52.27%;
+        top: 54.27%;
         left: -70%;
         /* position: relative; */
     }
