@@ -686,7 +686,7 @@ video{
     top: 86.27%;
     left: -33.184%;
     /* left: 33.184%; */
-    position: relative;
+    /* position: relative; */
 }
 .article-block{
     width: 52%;
@@ -1025,7 +1025,7 @@ video{
         position: absolute;
         top: 90.27%;
         left: -33.184%;
-        position: relative;
+        /* position: relative; */
     }
     /* .article .title-area .title-line{
         height: 52.186%;
